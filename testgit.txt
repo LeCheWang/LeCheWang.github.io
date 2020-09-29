@@ -1,0 +1,9 @@
+git init
+git add
+git commit -m "
+git status
+
+
+git add remote  //lk git vs github
+git push origin master
+git clone // 
