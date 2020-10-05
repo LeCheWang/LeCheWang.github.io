@@ -1,0 +1,143 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+#top{
+    background-color: rgba(14, 231, 130, 0.911) ;
+    height: 300px;
+    color: rgb(22, 10, 10);
+    width: 100%;
+    display: flex;
+    /* justify-content: baseline; */
+     align-items: center; 
+  
+}
+.icon{
+    display: flex;
+    flex-direction: column; 
+}
+i{
+    font-size: 50px;
+}
+
+#top #avt{
+    width: 150px;
+    height: 150px;
+     /* /* margin-top: 80px; */
+    margin-left: 150px; 
+    border-radius: 50%;    
+  }
+ 
+ 
+#name{
+    margin-left: 30px;
+    font-size: 28px;
+    width: 1000px;
+    /* line-height: 20px;
+    margin-top:-100px;
+    margin-left: 310px; */
+
+}    
+#sub{
+    font-size: 20px;
+}
+ #infor{
+    background-color: aliceblue;
+    height: 80px;
+    clear: left;
+    text-align: center;
+    line-height:80px ;
+    color: rgb(236, 134, 1);
+    font-size: large;
+}
+ 
+#edu{
+    height: 500px;
+}
+#edu #left{
+    background-color: rgb(255, 255, 255);
+    float: left; 
+    width: 900px;
+    margin-left: 150px ;
+    margin-right: 30px;
+    /* display: flex; */
+}
+#edu #left h1{
+    background-color: rgb(253, 167, 8);
+    height: 50px;
+    line-height: 50px;
+    color: white;
+    padding: 10px;
+    width: 657px;
+    margin-right: 150px;
+   
+}
+.main-box{
+    display: flex;
+    flex-wrap:wrap ;
+     /* de cac box nam trong width cua no */
+}
+.box{
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+    display: block !important;
+    margin-right: 1cm;
+    margin-top: 5px;
+}
+.ima{
+    background-color: bisque;
+    width: 196px;
+    height: 150px;
+    line-height: 150px;
+    border: rgb(145, 143, 143) 2px solid;
+    text-align: center;
+}
+.box p{
+    margin-top: 3%;
+    margin-left: 7%;
+    font-size: large;
+}
+#edu #right {
+    background-color:white;
+    float: left;
+    width: 300px;
+    
+}
+#edu #right h1{
+     background-color: rgb(253, 167, 8);
+    height: 50px;
+    line-height: 50px;
+    color: white;
+    padding: 10px;
+} 
+.item{
+    display: flex;
+    /* width: 100%; */
+    margin-top: 1%;
+    padding: 4%;
+    box-sizing: border-box;
+    border: rgb(255, 208, 80) 2px solid;
+}  
+.item_circel{
+    background-color: aqua;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+  
+} 
+#foot{
+    background-color: rgb(171, 197, 221);
+    min-height: 70px;
+    clear: left;
+    line-height: 70px;
+    text-align: center;
+    color: rgb(255, 0, 200);
+    font-size: large;
+    font-weight: 900;
+    padding: 1%;
+}
