@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    height: auto;
+    display: flex;
+    min-height: 80px;
+    justify-content: space-between;
+    align-items: flex-end;
+    background-color: rgb(197, 189, 192);
+}
+.header .left {
+    padding-left: 50px;
+    font-weight: 1000;
+    font-size: xx-large;
+    color: rgb(252, 6, 178);
+    padding-bottom: 10px;
+}
+.left b1{
+    color: black;
+    margin-right: -6px;
+}
+.left b1:hover{
+    color: rgb(252, 6, 178);
+}
+.header p {
+    padding-right: 50px; 
+    padding-bottom: 10px;   
+}
+/* ============= */
+/* ===cap1 */
+.menu1{
+    list-style-type: none;
+    background-color: rgb(47, 1, 58);
+    text-align: center;
+    margin: 0 auto;
+     display: flex;
+     justify-content: center;
+     position: relative;
+     width: 100%;
+}
+.sticky{
+     position: sticky;
+     top: 0;
+     z-index: 9999;
+}
+.menu1 > li{
+    width: 130px;
+    height: auto;
+    min-height: 50px;
+    line-height: 50px;
+   
+    list-style-type: none;
+}
+.menu1 >li a{
+    color: aliceblue;
+    display: block;
+    text-decoration: none;
+}
+.menu1> li> a:hover{
+    background-color: rgb(71, 68, 73);
+}
+/* ==cap2  */
+.menu1 >li >.sub-menu{
+    list-style-type: none;
+    display: none;
+    text-align: left;
+    margin-right: 40%;
+    position: absolute;
+
+}
+.menu1 >li >.sub-menu > li{
+    width: 130px;
+    margin: 0;
+    padding: 0;
+    /* text-indent: 40px; */
+    text-align: center;
+    position: relative;  
+    /* sdfghjgfds */
+}
+.menu1  >li:hover .sub-menu {
+    display: block;
+    background-color: rgb(47, 1, 58);
+    /* position: absolute; */
+}
+.menu1  >li .sub-menu >li >a:hover {
+    background: rgb(123, 93, 153);
+}
+/* ==cap3 */
+.menu1 >li >.sub-menu li >.sub-menu-1{
+    list-style-type: none;
+    background-color: rgb(47, 1, 58);
+    text-align: center;
+     justify-content: center;
+     display: none;
+     position: relative;
+     
+}
+.menu1 > li > .sub-menu li >.sub-menu-1 >li > a{
+    text-align: center;
+    /* background-color: blueviolet; */
+    /* position: absolute; */
+}
+.menu1 li .sub-menu li:hover .sub-menu-1{
+    display: block;
+    color: black;
+    left: 100%;
+    top: 0;
+    width: 120%;
+    /* text-indent: 6px; */
+   
+    position: absolute;
+}
+.menu1 li .sub-menu li .sub-menu-1 li a:hover{
+    background-color:rgb(71, 68, 73);
+}
+
+
+/* ////phan ba */
+
+.content{
+    display: flex;
+    /* background: rgb(61, 117, 150); */
+    height: 650px;
+    width: 100%;
+}
+.content-right{
+    width: 55% ;
+}
+
+.content-right img{
+    width: 90%;
+}
+.content-left{
+    width: 45%;
+    position: relative;
+}
+.content-left img{
+    width: 50%;
+    position: absolute;
+    left: 40%;
+    transform: translate(0,-10%);
+}
+.item{
+    width: 90%;
+    position: absolute;
+    left: 10%;
+    top: 40%;
+}
+.item p1{
+    font-size: 60px;
+    font-weight: 900;
+    color: rgb(157, 66, 180);
+}
+.item p{
+    font-size: 22px;
+    color: rgb(157, 66, 180);
+    padding: 20px 0;
+    font-weight: 900;
+}
+.item span{
+    background-color: rgb(14, 0, 27);
+    color: aliceblue;
+    font-size: 22px;
+    padding: 10px 20px;
+    border-radius: 25px;
+}
+.item span:hover{
+    background-color: aliceblue;
+    color: black;
+    border: 2px solid black;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ======== */
+.photo{
+    width: 50%;
+    position: relative;
+
+}
+.container{
+    height: 175vh;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+.product{
+    /* background-color: blue; */
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 0;
+    /* z-index: 1; */
+}
+
+.anh{
+    width: 100%;
+    height: auto;
+    /* z-index: 1; */
+}
+.detail{
+    width: 50%;
+    height: auto;
+    margin: auto 0;
+}
+.detail div{
+    width: 70%;
+    margin-left: 40px;
+}
+.sale{
+    background-color: rgb(180, 114, 15);
+    padding: 5px 10px;
+    z-index: 30;
+    position: absolute;
+    color: aliceblue;
+    top: 10px;
+    animation: changecolor 0.2s ease-out infinite;
+}
+@keyframes changecolor{
+    50%{
+        background-color: rgb(238, 23, 23);
+    }
+    100%{
+        background-color: rgb(226, 211, 220);
+    }
+}
+.sale2{
+    background-color: rgb(180, 114, 15);
+    padding: 5px 10px;
+    z-index: 30;
+    position: absolute;
+    color: aliceblue;
+    top: 10px;
+    right: 0;
+    animation: changecolor 0.2s ease-in infinite;
+
+}
+.footer{
+    background-color: rgb(90, 46, 46);
+    color: aquamarine;
+    font-size: xx-large;
+    text-align: center;
+    padding: 20px;
+}
