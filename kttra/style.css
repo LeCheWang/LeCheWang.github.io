@@ -42,7 +42,7 @@
 .right{
     display: flex;
     position: absolute;
-    right: 0;
+    right: 50px;
 }
 .right span{
     margin-left: 20px;
@@ -186,6 +186,7 @@
     background-color: rgb(100, 80, 49);
     width: 50%;
 }
+
 .thirst{
     min-height: 200px;
     width: 100%;
@@ -194,7 +195,7 @@
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-	align-content: center;padding: 80px;
+	align-content: center;
 }
 .kokoon{
     width: 20%;
@@ -207,7 +208,7 @@
 	align-items: center;
     align-content: center;
     text-align: center;
-    
+    margin: 50px;
 }
 .kokoon *{
     margin:  20px 0;
