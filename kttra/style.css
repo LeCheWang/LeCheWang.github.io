@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.first{
+    width: 80%;
+    background-color: aquamarine;
+    height: auto;
+    margin-left: 10%;
+    flex-direction: column;
+}
+.header{
+    display: flex;
+    background-color: blanchedalmond;
+    height: auto;
+    min-height: 100px;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: center;
+    align-content: stretch;
+    position: relative;
+}
+.icon{
+    background-color: blue;
+    margin-right: 50px;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+}
+.item{
+    text-align: center;
+    margin-left: 20px;
+    font-weight: 600;
+}
+.item:hover{
+    color: blue;
+}
+.right{
+    display: flex;
+    position: absolute;
+    right: 0;
+}
+.right span{
+    margin-left: 20px;
+    color: rgb(99, 99, 116);
+    padding: 10px 20px;
+}
+.span-right{
+    color: red;
+    border: 1px red solid;
+    color: red !important;
+    border-radius: 10%;
+}
+.span-right:hover{
+    background-color: red;
+    color: white !important;
+}
+.span1:hover{
+    text-decoration: underline;
+    color: blue;
+
+}
+.header2{
+    display: flex;
+    width: 100%;
+    width: 100%;
+}
+.left{
+    width: 50%;
+    background-color: pink;
+    height: auto;
+}
+.icoon{
+    display: flex;
+}
+.left h1{
+    margin-bottom: 30px;
+}
+.left >p{
+    margin-bottom: 30px;
+}
+.icoon p{
+    margin-bottom: 30px;
+}
+.two-span{
+    display: flex;
+    font-weight: 600;
+    font-size: 20px;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+    align-content: flex-end;
+    text-align: center;
+    
+}
+.Je{
+    background-color: red;
+    width: 40%;
+    padding: 10px 20px;
+    border-radius: 5%;
+    color: white;
+}
+.En{
+    width: 40%;
+    border: 0.5px black solid;
+    padding: 10px 20px;
+    border-radius: 5%;
+}
+.right2{
+    background-color: rgb(109, 90, 62);
+    width: 50%;
+    height: auto;
+    margin-top: 1px;
+}
+/* midddd */
+.middle{
+    margin-top: 30px;
+    width: 40%;
+    background-color: pink;
+    height: auto;
+    display: block;
+    text-align: center;
+   margin: 20px auto;
+	
+}
+.pan{
+    display: flex;
+	flex-direction: row-reverse;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: flex-end;
+}
+.aa{
+    margin-top: 20px;
+    
+}
+.middle span{
+    border: 1px black solid;
+    border-radius: 30%;
+    margin-left: 20px;
+    margin-top: 20px;
+	padding: 5px 10px ;
+    
+}
+.middle span:hover{
+    background-color: bisque;
+}
+.middle h2{
+    margin-bottom: 10px;
+}
+.middle p{
+    margin-bottom: 10px;
+}
+.second {
+    background-color: bisque;
+    margin-top: 100px;
+    height: auto;
+}
+.second-main{
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    background-color: aqua;
+    margin-left: 10%;
+}
+.main-left{
+    padding: 200px 0;
+    width: 50%;
+    flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-end;
+}
+.main-left p{
+    margin-top: 30px;
+}
+.main-right{
+    background-color: rgb(100, 80, 49);
+    width: 50%;
+}
+.thirst{
+    min-height: 200px;
+    width: 100%;
+    display: flex;
+	flex-direction: row-reverse;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;padding: 80px;
+}
+.kokoon{
+    width: 20%;
+    border: 1px black solid;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-end;
+	align-items: center;
+    align-content: center;
+    text-align: center;
+    
+}
+.kokoon *{
+    margin:  20px 0;
+}
+.footer {
+    background-color: blue;
+    display: flex;
+    position: relative;
+    height: 100px;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+}
+.footer-icon{
+    margin-right: 30px;
+}
+
+
