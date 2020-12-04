@@ -247,6 +247,9 @@ nav {
   }
 }
 @media (max-width: 345px){
+  .wp-slider .owl-carousel .item .march{
+    z-index: 99999999;
+  }
   .wp-slider .owl-carousel .item .march h1 {
     padding: 8px 20px;
     color: white;
