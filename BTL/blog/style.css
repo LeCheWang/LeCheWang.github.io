@@ -246,4 +246,32 @@ nav {
             columns: 1 !important;
   }
 }
+@media (max-width: 345px){
+  .wp-slider .owl-carousel .item .march h1 {
+    padding: 8px 20px;
+    color: white;
+    font-size: 30px;
+    background-color: #ff0080;
+  }
+  
+  .wp-slider .owl-carousel .item .march p {
+    color: #979191;
+    font-weight: 600;
+    margin-bottom:0;
+  }
+  
+  .wp-slider .owl-carousel .item .item-text {
+    width: 80%;
+    position: absolute;
+    font-size: 14px;
+    bottom: 10px;
+    left: 20px;
+    color: white;
+    z-index: 500;
+  }
+  .wp-slider .owl-carousel .item .item-text h2{
+    font-size: 25px;
+    line-height: 40px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
