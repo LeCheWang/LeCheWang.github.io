@@ -20,3 +20,26 @@ $(document).ready(function(){
     }
   })
 });
+var check = true;
+function myF1(){
+    if(check){
+        document.getElementById("idBars").style.display = "none";
+        document.getElementById("idRemove").style.display = "block";
+        document.getElementById("menu-left").style.display = "block";
+        check = false;
+    }else {
+        document.getElementById("idBars").style.display = "block";
+        document.getElementById("idRemove").style.display = "none";
+        document.getElementById("menu-left").style.display = "none";
+        check = true;
+    }
+}
+
+function myF2(){
+    if(!check){
+        document.getElementById("idBars").style.display = "block";
+        document.getElementById("idRemove").style.display = "none";
+        document.getElementById("menu-left").style.display = "none";
+        check = true;
+    }
+}
