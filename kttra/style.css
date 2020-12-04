@@ -1,20 +1,20 @@
 *{
     margin: 0;
     padding: 0;
+    
 }
 .first{
     width: 80%;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
     height: auto;
     margin-left: 10%;
     flex-direction: column;
 }
 .header{
     display: flex;
-    background-color: blanchedalmond;
-    height: auto;
+    /* background-color: blanchedalmond; */
+    /* height: auto; */
     min-height: 100px;
-    display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: flex-start;
@@ -23,13 +23,18 @@
     position: relative;
 }
 .icon{
-    background-color: blue;
+    /* background-color: blue; */
     margin-right: 50px;
 }
 
 .menu{
     display: flex;
     justify-content: center;
+    min-width: 700px;
+    /* width: 100%; */
+}
+.mid{
+    display: flex;
 }
 .item{
     text-align: center;
@@ -40,9 +45,12 @@
     color: blue;
 }
 .right{
-    display: flex;
+    /* display: flex; */
     position: absolute;
     right: 50px;
+    flex-wrap: wrap;
+    min-width: 80px;
+    
 }
 .right span{
     margin-left: 20px;
@@ -67,11 +75,15 @@
 .header2{
     display: flex;
     width: 100%;
-    width: 100%;
 }
+
+.header2>*{
+    flex: 1;
+}
+
 .left{
     width: 50%;
-    background-color: pink;
+    /* background-color: pink; */
     height: auto;
 }
 .icoon{
@@ -113,16 +125,21 @@
     border-radius: 5%;
 }
 .right2{
-    background-color: rgb(109, 90, 62);
+    /* background-color: rgb(109, 90, 62); */
     width: 50%;
     height: auto;
-    margin-top: 1px;
+    /* margin-top: 1px; */
 }
+.right2 img{
+    width: 100%;
+
+}
+
 /* midddd */
 .middle{
     margin-top: 30px;
     width: 40%;
-    background-color: pink;
+    /* background-color: pink; */
     height: auto;
     display: block;
     text-align: center;
@@ -135,8 +152,9 @@
 	flex-wrap: wrap;
 	justify-content: space-around;
 	align-items: center;
-	align-content: flex-end;
+    align-content: flex-end;
 }
+
 .aa{
     margin-top: 20px;
     
@@ -167,26 +185,47 @@
     display: flex;
     width: 80%;
     justify-content: center;
-    background-color: aqua;
-    margin-left: 10%;
+    /* background-color: aqua; */
+    /* margin-left: 10%; */
+    padding: 100px ;
 }
 .main-left{
-    padding: 200px 0;
-    width: 50%;
-    flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: flex-start;
-    align-items: flex-start;
-    align-content: flex-end;
+    flex: 1;
 }
+.main-left .content{
+    padding: 30px 30px;
+    min-width: 300px;
+}
+
 .main-left p{
     margin-top: 30px;
 }
-.main-right{
-    background-color: rgb(100, 80, 49);
-    width: 50%;
-}
 
+.main-right{
+    /* background-color: rgb(100, 80, 49); */
+    flex: 1;
+}
+.main-right img{
+    width: 90%;
+    min-width: 300px;
+}
+@media (max-width: 900px){
+    .second{
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .second-main{
+        flex-wrap: wrap;
+    }
+    .main-left{
+        flex-basis: 100%;
+    }
+    .main-right{
+        margin-top: 50px;
+        flex-basis: 100%;
+    }
+
+}
 .thirst{
     min-height: 200px;
     width: 100%;
@@ -199,8 +238,9 @@
 }
 .kokoon{
     width: 20%;
+    min-width: 200px;
     border: 1px black solid;
-    margin-left: 30px;
+    /* margin-left: 30px; */
     display: flex;
     flex-direction: column;
 	flex-wrap: nowrap;
@@ -208,10 +248,17 @@
 	align-items: center;
     align-content: center;
     text-align: center;
-    margin: 50px;
+    margin: 20px;
 }
 .kokoon *{
     margin:  20px 0;
+}
+.kokoon p{
+    padding: 0 10px;
+}
+.kokoon hr{
+    width: 80%;
+    height: 4px;
 }
 .footer {
     background-color: blue;
@@ -228,5 +275,17 @@
 .footer-icon{
     margin-right: 30px;
 }
+.footer-icon i:hover{
+    color: beige;
+}
+@media (max-width: 900px){
+    .header2{
+        flex-wrap: wrap;
+    }
+    .header2>*{
+        flex-basis:100%;
+    }
+}
 
 
+header2
