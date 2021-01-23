@@ -1,0 +1,63 @@
+body{
+    background-color: #78cccb;
+}
+
+.one{
+    background-color: rgb(168, 131, 131);
+    color: red;
+    align-content: center;
+    text-align: center;
+}
+
+.two, .three, .four{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+.two{
+    color: blue;
+}
+.three{
+    color: rgb(182, 30, 55);
+}
+.four{
+    color: rgb(124, 172, 112);
+}
+.container{
+    width: 100%;
+}
+.left{
+    width: 50%;
+    margin-left: 5px;
+    background-color: #cac7c3;
+}
+.right{
+    width: 50%;
+    margin-left: 5px;
+    background-color: #cac7c3;
+}
+.container{
+    display: flex;
+}
+.truyenCuoi{
+    background-color:  rgb(168, 131, 131);
+    color: yellow;
+}
+.thanQuen, .kPCN, .whyE{
+    background-color: red;
+    color: yellow;
+}
+.truyen1, .truyen2, .truyen3{
+    background-color: white;
+
+}
+.truyen1{
+    color: red;
+}
+.truyen2{
+    color: rgb(124, 172, 112);
+}
+.truyen3{
+    color: rgb(79, 144, 197);
+}
