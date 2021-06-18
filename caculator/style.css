@@ -1,0 +1,57 @@
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: rgb(66, 54, 54);
+}
+
+.my_caculator {
+    width: 300px;
+    margin: 0 auto;
+    background: rgb(36, 44, 44);
+    border-radius: 20px;
+}
+
+.my_caculator h1 {
+    text-align: center;
+    color: rgb(126, 120, 120);
+}
+
+.inputText {
+    background: white;
+    margin: 0 16px;
+    border-radius: 4px;
+    padding: 10px;
+    display: block;
+    color: brown;
+    font-size: x-large;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.inputText .output {
+    text-align: right;
+    padding-right: 30px;
+    padding-top: 20px;
+}
+
+.AllButton {
+    margin: 15px 15px;
+    padding: 5px;
+    border-radius: 16px;
+    border: 2px solid wheat;
+}
+
+.AllButton table td input {
+    width: 40px;
+    height: 30px;
+    border-radius: 4px;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    color: blanchedalmond;
+    font-size: 30px;
+    padding-bottom: 2px;
+}
