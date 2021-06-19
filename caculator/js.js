@@ -21,10 +21,12 @@ for (const item of system) {
             setResult(0);
             setOldResult("");
         } else if (item.value === "C") {
-            let t = getResult();
-            setResult(t.substring(0, t.length - 1));
+            if (getOldResult() != "") {
+                let t = getOldResult();
+                setOldResult(t.substring(0, t.length - 1));
+            }
         } else if (item.value == "=") {
-            let k = eval(getResult());
+            let k = eval(getOldResult());
             setResult(k);
             check = true;
         }
@@ -36,13 +38,22 @@ const inpNumber = document.getElementsByClassName("so");
 for (const value of inpNumber) {
     value.addEventListener("click", () => {
         if (check) {
-            setResult("0")
+            setOldResult("");
+            let km = getResult();
+            if (["-", "+", "/", "*"].includes(value.value)) {
+                km = km + value.value;
+                setOldResult(km);
+                setResult("");
+                check = false;
+            }
         }
-        var result = getResult() === "0" ? "" : getResult();
-        if (result != NaN) {
-            result += value.value;
-            setResult(result);
-            check = false;
-        }
+        var result = getOldResult();
+        result += value.value;
+        setOldResult(chuan_hoa(result));
+        check = false;
     })
+}
+
+function chuan_hoa(text) {
+    return text.replace("++", "+").replace("--", "-").replace("**", "*").replace("//", "/");
 }
