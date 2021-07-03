@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+</style>
+
+<body>
+    <form action="./process.php" method="POST" onsubmit="return sendData()">
+        <table border="1" cellspacing="0">
+            <tr style="text-align: center;">
+                <th><input type="checkbox" name="check" id="checkAll"></th>
+                <th>Order No</th>
+                <th>Customer Name</th>
+                <th>Order Date</th>
+                <th>Value</th>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="check" id="check1"></td>
+                <td>SHD 11 <input type="hidden" value="SHD 11" name="" id="ordeName"></td>
+                <td>Nguyễn Văn A <input type="hidden" value="Nguyễn Văn A" name="" id="customerName"></td>
+                <td>12/2/2009 <input type="hidden" value="12/2/2009" name="" id="ngay"></td>
+                <td><input type="number" name="value" id="value1"></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="check" id="check2"></td>
+                <td>SHD 12 <input type="hidden" value="SHD 12" name="" id="ordeName1"></td>
+                <td>Nguyễn Bích Thảo <input type="hidden" value="Nguyễn Bích Thảo" name="" id="customerName1"></td>
+                <td>12/11/2009<input type="hidden" value="12/2/2009" name="" id="ngay1"></td>
+                <td><input type="number" name="value" id="value2"></td>
+            </tr>
+            <tr>
+                <td colspan="4" style="text-align: center; font-weight: bold;">Total: </td>
+                <td><input type="number" id="total"></td>
+            </tr>
+            <tr>
+                <td colspan="5" style="text-align: right;">
+                    <button>update</button>
+                    <button type="submit">save</button>
+                    <button onclick="return history.back()">back</button>
+                    <button type="reset">reset</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <script>
+        var check1 = document.getElementById("check1");
+        var check2 = document.getElementById("check2");
+        var checkAll = document.getElementById("checkAll");
+        checkAll.onclick = () => {
+            if (checkAll.checked == true) {
+                check1.checked = true;
+                check2.checked = true;
+            } else {
+                check1.checked = false;
+                check2.checked = false;
+            }
+        };
+
+        function sendData() {
+
+        }
+    </script>
+
+</body>
+
+</html>

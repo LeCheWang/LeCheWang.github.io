@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <img id="den" src="./off.png">
+    <script>
+        var den = document.getElementById("den");
+        den.addEventListener("click", () => {
+            if (den.src.match("off")) {
+                den.src = "./on.png"
+            } else {
+                den.src = "./off.png";
+            }
+        })
+    </script>
+</body>
+
+</html>

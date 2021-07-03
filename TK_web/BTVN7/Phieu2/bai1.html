@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+</style>
+
+<body>
+
+    <div>
+        Enter your email address: <input type="text" name="" id="">
+        <button onclick="addMore()" name="add">Add more</button>
+    </div>
+
+    <script>
+        function addMore() {
+            var theDiv = document.createElement("div");
+            theDiv.innerText = "Enter your email address: ";
+            var theInput = document.createElement("input");
+            var theBtn = document.createElement("button");
+            theBtn.textContent = "remove";
+            theBtn.name = "remove"
+            theDiv.appendChild(theInput);
+            theDiv.appendChild(theBtn);
+            // document.body.innerHTML += theDiv.innerHTML + '<br> ';
+            document.body.appendChild(theDiv);
+
+            var rm = document.getElementsByName("remove");
+            for (const btnRemove of rm) {
+                btnRemove.addEventListener("click", () => {
+                    let parent = btnRemove.parentElement;
+                    parent.remove();
+                })
+            }
+
+        }
+    </script>
+
+</body>
+
+</html>

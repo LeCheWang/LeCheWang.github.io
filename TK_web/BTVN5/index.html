@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BTVN5</title>
+</head>
+<style>
+    input {
+        width: 50px;
+    }
+    
+    #input {
+        width: 200px;
+        height: 50px;
+        border: solid 1px blue;
+        text-align: center;
+        line-height: 50px;
+        margin-top: 30px;
+    }
+    
+    #output {
+        width: 200px;
+        height: 50px;
+        border: solid 1px blue;
+        text-align: center;
+        line-height: 50px;
+        margin-top: 30px;
+    }
+</style>
+
+<body>
+    <div class="Phieu1">
+        <H1 style="text-align: center;">Phiếu số 1</H1>
+        <h1>Bài 1</h1>
+        Ngày tháng năm sinh:
+        <select id="day"></select> tháng
+        <select id="month"></select> năm
+        <select id="year"></select>
+        <h1>Bài 2</h1>
+        <button onclick="bai2()">Bài 2</button>
+    </div>
+    <div class="phieu2">
+        <H1 style="text-align: center;">Phiếu số 2</H1>
+        <h1>bài 3</h1>
+        <h2>Enter parameters</h2>
+        <input type="number" placeholder="a" id="a"> x<sup>2</sup> +
+        <input type="number" placeholder="b" id="b"> x +
+        <input type="number" placeholder="c" id="c"> =0
+        <br> <br>
+        <button id="result">result</button> <br>
+        <p style="color: red; display: none;" id="error">Phương trình vô nghiệm</p>
+        <br> X1: <input type="text" id="x1"><br> <br> X2: <input type="text" id="x2">
+        <h1>Bài 4</h1>
+        <div class="bai2_p2">
+            <input type="button" class="so" value="1" id="1"></input>
+            <input type="button" class="so" value="2" id="2"></input>
+            <input type="button" class="so" value="3" id="3"></input>
+            <input type="button" class="so" value="4" id="4"></input>
+            <input type="button" class="so" value="5" id="5"></input>
+            <input type="button" class="so" value="+" id="+"></input>
+            <br>
+            <input type="button" class="so" value="6" id="6"></input>
+            <input type="button" class="so" value="7" id="7"></input>
+            <input type="button" class="so" value="8" id="8"></input>
+            <input type="button" class="so" value="9" id="9"></input>
+            <input type="button" class="so" value="0" id="0"></input>
+            <input type="button" onclick="result()" value="=" id="bang"></input>
+            <br> <br>
+            <button type="button" onclick="resetAll()"> reset</button>
+
+            <div id="input">
+                0
+            </div>
+            <div id="output">
+                0
+            </div>
+        </div>
+    </div>
+    <script>
+        //bai4
+        var so = document.getElementsByClassName("so");
+        var inp = document.getElementById("input");
+        var outp = document.getElementById("output");
+        var cong = document.getElementById("+");
+        var bang = document.getElementById("bang");
+        var res = inp.innerText;
+
+        for (const item of so) {
+            item.addEventListener("click", () => {
+
+                if (res === "0") {
+                    res = '';
+                }
+                res += item.value;
+                inp.innerHTML = res;
+
+            })
+        }
+
+        function result() {
+            outp.innerText = eval(res);
+        }
+
+        function resetAll() {
+            res = "0";
+            outp.innerText = 0;
+            inp.innerHTML = 0;
+        }
+
+
+
+        //bài  1
+        var selectDay = document.getElementById("day");
+        var selectMonth = document.getElementById("month");
+        var selectYear = document.getElementById("year");
+        var option;
+        for (let i = 1; i < 31; i++) {
+            option = document.createElement("option");
+            option.value = i;
+            option.text = i;
+            selectDay.appendChild(option);
+        }
+        for (let i = 1; i < 13; i++) {
+            option = document.createElement("option");
+            option.value = i;
+            option.text = i;
+            selectMonth.appendChild(option);
+        }
+        for (let i = 1990; i < 2022; i++) {
+            option = document.createElement("option");
+            option.value = i;
+            option.text = i;
+            selectYear.appendChild(option);
+        }
+        // bài 2
+        function bai2() {
+            alert("hello anh em");
+        }
+        // bài 3
+        var bai3 = document.getElementById("result");
+        bai3.addEventListener("click", () => {
+            let e = document.getElementById("error");
+            e.style.display = "none";
+            let a = document.getElementById("a").value;
+            let b = document.getElementById("b").value;
+            let c = document.getElementById("c").value;
+            let x1 = document.getElementById("x1");
+            let x2 = document.getElementById("x2");
+
+            if (!(a && b && c)) {
+                e.style.display = "block";
+                e.innerHTML = "Hãy nhập đủ 3 tham số";
+            } else {
+                let delta = Math.pow(b, 2) - 4 * a * c;
+                if (delta === 0) {
+                    x1.value = -b / (2 * c);
+                    x2.value = -b / (2 * c);
+                } else if (delta < 0) {
+                    e.style.display = "block";
+                    e.innerHTML = "Phương trình vô nghiệm";
+                } else {
+                    x1.value = (-b + Math.sqrt(delta)) / (2 * a);
+                    x2.value = (-b - Math.sqrt(delta)) / (2 * a);
+                }
+            }
+
+        })
+    </script>
+</body>
+
+</html>

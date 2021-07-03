@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        text-align: center;
+    }
+    
+    table {
+        background-color: aqua;
+    }
+    
+    input {
+        margin: 0 10px;
+    }
+</style>
+
+<body>
+    <table border="1">
+        <tr>
+            <th colspan="2">Chương trình tính tiền taxi</th>
+        </tr>
+        <tr>
+            <td>Số km đã đi được</td>
+            <td><input type="number" name="" id="soKm"></td>
+        </tr>
+        <tr>
+            <td>Tiền thanh toán</td>
+            <td><input type="number" name="" id="tien" value="0"></td>
+        </tr>
+        <tr>
+            <td colspan="2"> <button onclick="xoa()">xóa</button> <button onclick="tinhTien()">tính tiền</button></td>
+        </tr>
+    </table>
+    <script>
+        function xoa() {
+            document.getElementById("soKm").value = "";
+            document.getElementById("tien").value = 0;
+        }
+
+        function tinhTien() {
+            var soKm = document.getElementById("soKm").value;
+            var tien = document.getElementById("tien");
+            var res = 0;
+            if (soKm <= 1) {
+                res = soKm * 15000;
+            } else if (soKm < 5) {
+                res = (soKm - 1) * 12000 + 15000;
+            } else if (soKm < 140) {
+                res = 15000 + 12000 * 4 + (soKm - 5) * 9000;
+            } else {
+                res = 15000 + 12000 * 4 + (soKm - 5) * 9000;
+                res = res - res * 12 / 100;
+            }
+            tien.value = res;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <meta charset="utf-8">
+</head>
+<style>
+    .pt {
+        display: flex;
+    }
+    
+    .ngoac {
+        font-size: 100px;
+    }
+    
+    .haiPt {
+        line-height: 60px;
+    }
+    
+    .haiPt>input {
+        width: 50px;
+    }
+</style>
+
+<body>
+    <h1>Giải hệ phương trình bậc nhất 2 ẩn</h1>
+    <div class="pt">
+        <div class="ngoac">
+            {
+        </div>
+        <div class="haiPt">
+            <input type="number" placeholder="a" name="" id="a">x+ <input type="number" placeholder="b" , id="b">y = <input type="number" placeholder="c" name="" id="c"> <br>
+            <input type="number" placeholder="a'" name="" id="ap">x+ <input type="number" placeholder="b'" , id="bp">y = <input type="number" placeholder="c'" name="" id="cp">
+        </div>
+    </div>
+    <button onclick="slove()">solve</button>
+    <button onclick="reset()">reset</button>
+    <p id="ex" style="display: none; color: red;"></p>
+    <br> <br> X= <input type="number" name="" id="x"> <br> <br> Y= <input type="number" name="" id="y">
+    <script>
+        var a = document.getElementById("a");
+        var b = document.getElementById("b");
+        var c = document.getElementById("c");
+        var ap = document.getElementById("ap");
+        var bp = document.getElementById("bp");
+        var cp = document.getElementById("cp");
+        var x = document.getElementById("x");
+        var y = document.getElementById("y");
+        var ex = document.getElementById("ex");
+
+        function reset() {
+            a.value = null;
+            b.value = null;
+            c.value = null;
+            ap.value = null;
+            bp.value = null;
+            cp.value = null;
+            x.value = null;
+            y.value = null;
+            ex.style.display = "none";
+        }
+
+        function slove() {
+            ex.style.display = "block";
+            let D = a.value * bp.value - (b.value * ap.value);
+            let Dx = c.value * bp.value - (b.value * cp.value);
+            let Dy = a.value * cp.value - (ap.value * c.value);
+
+            if (!(a.value && b.value && c.value && ap.value && cp.value && bp.value)) {
+                ex.innerHTML = "Hãy nhập đủ các hệ số";
+            } else if (D === 0 && Dx === 0 && Dy === 0) {
+                ex.innerHTML = "Hệ phương trình có vô số nghiệm";
+            } else if (D != 0) {
+                ex.innerHTML = "Hệ phương tr  ình có nghiệm duy nhất";
+                x.value = Dx / D;
+                y.value = Dy / D;
+            } else if (Dx != 0 || Dy != 0) {
+                ex.innerHTML = "Hệ phương trình vô nghiệm";
+            }
+        }
+    </script>
+</body>
+
+</html>
+
+</html>

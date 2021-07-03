@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        input {
+            box-shadow: 3px 3px 5px black;
+            border: 3px inset;
+        }
+    </style>
+</head>
+
+<body>
+    <table border="1" cellspacing="0" cellpadding="5px" width="800px" bgcolor="#E0F9D9" style="color: rgb(7, 133, 74); font-size: 20px">
+        <caption>
+            <h2>PHIẾU ĐĂNG KÝ THAM GIA CHƯƠNG TRÌNH KHUYẾN MÃI</h2>
+        </caption>
+        <tr>
+            <td width="300px">Họ Và Tên</td>
+            <td>
+                <input type="text" style="width: 400px" placeholder="Nguyễn Văn A" />
+            </td>
+        </tr>
+        <tr>
+            <td>Địa chỉ</td>
+            <td>
+                <input type="text" style="width: 350px" placeholder="Minh Khai, Bắc Từ Liêm" />
+            </td>
+        </tr>
+        <tr>
+            <td>Điện thoại</td>
+            <td>
+                <input type="text" placeholder="0337733234" />
+            </td>
+        </tr>
+        <tr>
+            <td>Phái</td>
+            <td>
+                <input type="radio" name="gender" id="gd_male" checked />
+                <label for="gd_male">Nam</label>
+                <input type="radio" name="gender" id="gd_famale" />
+                <label for="gd_female">Nữ</label>
+            </td>
+        </tr>
+        <tr>
+            <td>Nghề Nghiệp</td>
+            <td>
+                <select name="job" id="job">
+            <option>Giáo Viên</option>
+            <option>Lập Trình Viên</option>
+            <option>Bác Sỹ</option>
+            <option>Lao Động Tự Do</option>
+          </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Chọn sản phẩm tham gia</td>
+            <td>
+                <select name="sp" id="" spellcheck="false" multiple="multiple">
+            <option>Dầu gội đầu</option>
+            <option>Dầu ăn</option>
+            <option>Dầu rửa bát</option>
+            <option>Kem đánh răng</option>
+          </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Dự đoán số người tham gia</td>
+            <td><input type="text" name="" id="" placeholder="50000" /></td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <input type="submit" style="border: 1px solid" value="Đồng Ý" />
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>JavaScipt kiểm soát form</h1>
+    <p>Hãy nhập số vào hộp text (từ 1 đến 10):</p>
+    <form action="" method="PAtCH" onsubmit="return validateForm()">
+        <input type="text" name="" id="text">
+        <input type="submit"></input>
+    </form>
+    <p id="ketqua" style="display: none;"></p>
+    <script type="text/javascript">
+        function validateForm() {
+            var kq = document.getElementById("ketqua");
+            kq.style.display = "block";
+            var a = document.getElementById("text").value;
+            if (a >= 1 && a <= 10) {
+                kq.innerHTML = "Dữ liệu đúng"
+            } else {
+                kq.innerHTML = "Dữ liệu không đúng";
+            }
+            return false;
+        }
+    </script>
+</body>
+
+</html>

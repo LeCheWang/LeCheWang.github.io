@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        text-align: left;
+    }
+    
+    table {
+        background: rgb(228, 7, 117);
+    }
+</style>
+
+<body>
+    <table border="1">
+        <tr>
+            <td colspan="2"> Chuong trinh tra tuoi</td>
+        </tr>
+        <tr>
+            <td>Tuổi dương lịch</td>
+            <td><input type="number" name="" id="dl"></td>
+        </tr>
+        <tr>
+            <td>Tuổi âm lịch</td>
+            <td><input type="text" name="" id="al"></td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;">
+                <button onclick="xoa()">xóa</button>
+                <button onclick="tra()">Tra cứu</button>
+            </td>
+        </tr>
+    </table>
+
+    <script>
+        var dl = document.getElementById("dl");
+        var al = document.getElementById("al");
+
+        function xoa() {
+            dl.value = null;
+            al.value = null;
+        }
+
+        function tra() {
+            let can, chi;
+            switch (dl.value % 10) {
+                case 0:
+                    can = 'canh';
+                    break;
+                case 1:
+                    can = 'tân';
+                    break;
+                case 2:
+                    can = 'nhâm';
+                    break;
+                case 3:
+                    can = 'quy';
+                    break;
+                case 4:
+                    can = 'giáp';
+                    break;
+                case 5:
+                    can = 'ất';
+                    break;
+                case 6:
+                    can = 'bính';
+                    break;
+                case 7:
+                    can = 'đinh';
+                    break;
+                case 8:
+                    can = 'mậu';
+                    break;
+                case 9:
+                    can = 'kỷ';
+                    break;
+
+            }
+            switch (dl.value % 12) {
+                case 0:
+                    chi = 'thân';
+                    break;
+                case 1:
+                    chi = 'dậu';
+                    break;
+                case 2:
+                    chi = 'tuất';
+                    break;
+                case 3:
+                    chi = 'hợi';
+                    break;
+                case 4:
+                    chi = 'tý';
+                    break;
+                case 5:
+                    chi = 'sửa';
+                    break;
+                case 6:
+                    chi = 'dần';
+                    break;
+                case 7:
+                    chi = 'mão';
+                    break;
+                case 8:
+                    chi = 'thìn';
+                    break;
+                case 9:
+                    chi = 'tỵ';
+                    break;
+                case 10:
+                    chi = 'ngọ';
+                    break;
+                case 11:
+                    chi = 'mùi';
+                    break;
+            }
+            al.value = can + ' ' + chi;
+        }
+    </script>
+
+</body>
+
+</html>

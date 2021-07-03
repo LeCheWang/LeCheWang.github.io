@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table {
+        background: cyan;
+        text-align: center;
+    }
+    
+    input {
+        height: 20px;
+    }
+</style>
+
+<body>
+    <table border="1" cellpadding="5px">
+        <tr>
+            <th colspan="2">Tính tiền sân bóng</th>
+        </tr>
+        <tr>
+            <td>Nhập giờ vào: </td>
+            <td><input type="text" name="" id="hVao"></td>
+        </tr>
+        <tr>
+            <td>Nhập giờ ra: </td>
+            <td><input type="text" name="" id="hRa"></td>
+        </tr>
+        <tr>
+            <td>Đơn giá theo giờ: </td>
+            <td><input type="text" name="" id="dg_Gio"></td>
+        </tr>
+        <tr>
+            <td>Số bình nước: </td>
+            <td><input type="text" name="" id="so_Bn"></td>
+        </tr>
+        <tr>
+            <td>Đơn giá bình nước: </td>
+            <td><input type="text" name="" id="dg_Nuoc"></td>
+        </tr>
+        <tr>
+            <td>Tổng tiền: </td>
+            <td><input type="text" name="" id="tongTien"></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <Button onclick="xoa()">Xóa</Button>
+                <Button onclick="tinhTongTien()">Tính Tổng Tiền</Button>
+            </td>
+        </tr>
+    </table>
+
+    <script>
+        var hVao = document.getElementById("hVao");
+        var hRa = document.getElementById("hRa");
+        var dg_Gio = document.getElementById("dg_Gio");
+        var so_Bn = document.getElementById("so_Bn");
+        var dg_Nuoc = document.getElementById("dg_Nuoc");
+        var tongTien = document.getElementById("tongTien");
+
+        function xoa() {
+            hVao.value = null;
+            hRa.value = null;
+            dg_Gio.value = null;
+            so_Bn.value = null;
+            dg_Nuoc.value = null;
+            tongTien.value = null;
+        }
+
+        function tinhTongTien() {
+            let t = (hRa.value - hVao.value) * dg_Gio.value + so_Bn.value * dg_Nuoc.value;
+            tongTien.value = t;
+            if (t > 1000000) {
+                alert("khach vip");
+            } else {
+                alert("khach thuong");
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>

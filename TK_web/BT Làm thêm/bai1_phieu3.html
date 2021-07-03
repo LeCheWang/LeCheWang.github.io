@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    input {
+        width: 50px;
+    }
+    
+    label {
+        color: red;
+    }
+    
+    p {
+        color: red;
+    }
+</style>
+
+<body>
+    <label for="">giờ vào: </label>
+    <input type="number" id="hVao">h
+    <br>
+    <br>
+    <label for="">giờ ra: </label>
+    <input type="number" id="hRa">h
+    <br> <br>
+    <button type="button" onclick="tinhTien()">tính tiền</button>
+    <p id="error"></p>
+    <br> Thành tiền: <span id="result">0</span>
+</body>
+<script>
+    var result = document.getElementById("result");
+    var er = document.getElementById("error");
+
+    function tinhTien() {
+        er.innerHTML = "";
+        let tien = 0;
+        var vao = document.getElementById("hVao").value;
+        var ra = document.getElementById("hRa").value;
+        if (vao < 10 || ra > 24 || !(vao && ra)) {
+            er.innerHTML = "Giờ vào-ra không hợp lệ";
+        } else if (ra < 17) {
+            tien = (ra - vao) * 20000;
+        } else if (vao > 17) {
+            tien = (ra - vao) * 45000;
+        } else if (vao < 17 && ra > 17) {
+            tien = (17 - vao) * 20000 + (ra - 17) * 45000;
+        }
+        result.innerHTML = tien;
+    }
+</script>
+
+</html>

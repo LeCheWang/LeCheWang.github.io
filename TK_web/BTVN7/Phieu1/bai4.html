@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    form {
+        display: flex;
+    }
+</style>
+
+
+<body>
+    <form action="" onsubmit="return done()">
+        <table>
+            <tr>
+                <td>Số thứ nhất:</td>
+                <td><input type="number" name="" id="stn"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button type="button" onclick="bam('+')">+</button>
+                    <button type="button" onclick="bam('-')">-</button>
+                    <button type="button" onclick="bam('*')">*</button>
+                    <button type="button" onclick="bam('/')">/</button>
+                    <button type="button" onclick="bam('^')">^</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Số thứ hai:</td>
+                <td><input type="number" name="" id="sth"></td>
+            </tr>
+            <tr>
+                <td>Kết quả:</td>
+                <td><input type="number" name="" id="kq"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <p id="thongbao" style="display: none; color: red; text-align: center;">hãy nhập đủ cả 2 số</p>
+                </td>
+            </tr>
+            <tr style="text-align:center; ">
+                <td colspan="2">
+                    <Button type="submit">Done</Button>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <script>
+        var stn = document.getElementById("stn");
+        var sth = document.getElementById("sth");
+        var kq = document.getElementById("kq");
+        var thongbao = document.getElementById("thongbao");
+
+        var res;
+
+        function bam(x) {
+            res = x;
+            console.log(res);
+        }
+
+        function done() {
+            console.log(res);
+            thongbao.style.display = "none";
+            if (!(stn.value && sth.value)) {
+                thongbao.style.display = "block";
+            } else
+
+            if (res === "^") {
+                kq.value = eval(Math.pow(stn.value, sth.value));
+            } else {
+                kq.value = eval(stn.value + res + sth.value);
+            }
+            return false;
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        text-align: center;
+    }
+    
+    table {
+        background: cyan;
+    }
+</style>
+
+<body>
+    <table border="1">
+        <tr>
+            <th colspan="2">Tính tổng dãy số</th>
+        </tr>
+        <tr>
+            <td>Nhập n: </td>
+            <td><input type="number" name="" id="n"></td>
+        </tr>
+        <tr>
+            <td>Tổng dãy số: </td>
+            <td><input type="text" name="" id="sum"></td>
+        </tr>
+        <tr>
+            <td colspan="2"> <button onclick="xoa()">xóa</button> <button onclick="tinh()">Tính</button></td>
+        </tr>
+    </table>
+    <script>
+        var n = document.getElementById("n");
+        var t = document.getElementById("sum");
+
+        function xoa() {
+            n.value = null;
+            t.value = null;
+        }
+
+        function tinh() {
+            let s = 0;
+            for (let i = 1; i <= n.value;) {
+                s += i;
+                i += 2;
+            }
+            t.value = s;
+        }
+    </script>
+</body>
+
+</html>

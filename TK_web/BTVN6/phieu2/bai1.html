@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Enter parameters</h2>
+    <input type="number" placeholder="a" id="a"> x<sup>2</sup> +
+    <input type="number" placeholder="b" id="b"> x +
+    <input type="number" placeholder="c" id="c"> =0
+    <br> <br>
+    <button id="result">result</button> <br>
+    <p style="color: red; display: none;" id="error">Phương trình vô nghiệm</p>
+    <br> X1: <input type="text" id="x1"><br> <br> X2: <input type="text" id="x2">
+
+    <script>
+        var bai3 = document.getElementById("result");
+        bai3.addEventListener("click", () => {
+            let e = document.getElementById("error");
+            e.style.display = "none";
+            let a = document.getElementById("a").value;
+            let b = document.getElementById("b").value;
+            let c = document.getElementById("c").value;
+            let x1 = document.getElementById("x1");
+            let x2 = document.getElementById("x2");
+
+            if (!(a && b && c)) {
+                e.style.display = "block";
+                e.innerHTML = "Hãy nhập đủ 3 tham số";
+            } else {
+                let delta = Math.pow(b, 2) - 4 * a * c;
+                if (delta === 0) {
+                    x1.value = -b / (2 * c);
+                    x2.value = -b / (2 * c);
+                } else if (delta < 0) {
+                    e.style.display = "block";
+                    e.innerHTML = "Phương trình vô nghiệm";
+                } else {
+                    x1.value = (-b + Math.sqrt(delta)) / (2 * a);
+                    x2.value = (-b - Math.sqrt(delta)) / (2 * a);
+                }
+            }
+
+        })
+    </script>
+</body>
+
+</html>
