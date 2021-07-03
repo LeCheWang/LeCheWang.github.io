@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+</head>
+<style>
+    header {
+        background: blue;
+        height: 100px;
+    }
+    
+    nav {
+        background-color: rgb(184, 177, 177);
+    }
+    
+    nav>ul {
+        display: flex;
+        width: 80%;
+        height: 50px;
+        /* justify-content: space-around; */
+    }
+    
+    nav>ul>li {
+        list-style: none;
+        width: 130px;
+        text-align: center;
+        position: relative;
+    }
+    
+    nav>ul>li:hover {
+        background: red;
+        color: white;
+        border-left: solid 1px white;
+        border-right: solid 1px white;
+    }
+    
+    nav>ul>li:hover .menu-con {
+        display: block;
+    }
+    
+    nav>ul>li:hover a {
+        color: white;
+    }
+    
+    nav>ul>li>a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        line-height: 50px;
+    }
+    
+    .menu-con {
+        display: none;
+        width: 120%;
+        padding: 0;
+        position: absolute;
+        background-color: red;
+    }
+    
+    .menu-con>li {
+        text-align: left;
+        list-style: none;
+        text-indent: 10px;
+        height: 50px;
+        line-height: 50px;
+        border-top: solid 1px white;
+    }
+    
+    .menu-con>li>a {
+        text-decoration: none;
+        font-weight: bold;
+        color: white;
+    }
+</style>
+
+<body>
+    <header></header>
+    <nav>
+        <ul>
+            <li>
+                <a href="">ĐIỆN THOẠI</a>
+                <ul class="menu-con">
+                    <li>
+                        <a href="">Loa</a>
+                    </li>
+                    <li>
+                        <a href="">Loa vi tính</a>
+                    </li>
+                    <li>
+                        <a href="">Loa Bluetooth</a>
+                    </li>
+                    <li>
+                        <a href="">Loa kéo</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="">TABLET</a>
+                <ul class="menu-con">
+                    <li>
+                        <a href="">Loa</a>
+                    </li>
+                    <li>
+                        <a href="">Loa vi tính</a>
+                    </li>
+                    <li>
+                        <a href="">Loa Bluetooth</a>
+                    </li>
+                    <li>
+                        <a href="">Loa kéo</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="">PHỤ KIỆN</a>
+                <ul class="menu-con">
+                    <li>
+                        <a href="">Loa</a>
+                    </li>
+                    <li>
+                        <a href="">Loa vi tính</a>
+                    </li>
+                    <li>
+                        <a href="">Loa Bluetooth</a>
+                    </li>
+                    <li>
+                        <a href="">Loa kéo</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="">ĐỒNG HỒ</a>
+                <ul class="menu-con">
+                    <li>
+                        <a href="">Loa</a>
+                    </li>
+                    <li>
+                        <a href="">Loa vi tính</a>
+                    </li>
+                    <li>
+                        <a href="">Loa Bluetooth</a>
+                    </li>
+                    <li>
+                        <a href="">Loa kéo</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="">ÂM THANH</a>
+                <ul class="menu-con">
+                    <li>
+                        <a href="">Loa</a>
+                    </li>
+                    <li>
+                        <a href="">Loa vi tính</a>
+                    </li>
+                    <li>
+                        <a href="">Loa Bluetooth</a>
+                    </li>
+                    <li>
+                        <a href="">Loa kéo</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="">LAPTOP</a>
+            </li>
+            <li>
+                <a href="">SIM THẺ</a>
+            </li>
+            <li>
+                <a href="">HÀNG CŨ</a>
+            </li>
+            <li>
+                <a href="">TRẢ GÓP</a>
+            </li>
+        </ul>
+    </nav>
+    <section>
+        <div class="containerLeft">
+            <div class="item">
+                <figure>
+                    <img src="https://thuthuatnhanh.com/wp-content/uploads/2019/07/anh-girl-xinh-facebook-tuyet-dep-387x580.jpg">
+                    <figcaption>Galaxy Note 10</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://thuthuatnhanh.com/wp-content/uploads/2019/07/anh-girl-xinh-facebook-tuyet-dep-387x580.jpg">
+                    <figcaption>Galaxy Note 10</figcaption>
+                </figure>
+            </div>
+            <div class="item">
+                <figure>
+                    <img src="https://thuthuatnhanh.com/wp-content/uploads/2019/07/anh-girl-xinh-facebook-tuyet-dep-387x580.jpg">
+                    <figcaption>Galaxy Note 10</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://thuthuatnhanh.com/wp-content/uploads/2019/07/anh-girl-xinh-facebook-tuyet-dep-387x580.jpg">
+                    <figcaption>Galaxy Note 10</figcaption>
+                </figure>
+            </div>
+            <div class="item">
+                <figure>
+                    <img src="https://thuthuatnhanh.com/wp-content/uploads/2019/07/anh-girl-xinh-facebook-tuyet-dep-387x580.jpg">
+                    <figcaption>Galaxy Note 10</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://thuthuatnhanh.com/wp-content/uploads/2019/07/anh-girl-xinh-facebook-tuyet-dep-387x580.jpg">
+                    <figcaption>Galaxy Note 10</figcaption>
+                </figure>
+            </div>
+
+        </div>
+        <div class="containerRight">
+            <div class="item2">
+                <img src="https://phunugioi.com/wp-content/uploads/2020/04/anh-gai-xinh-hot-girl-nhat-ban.jpg" alt="">
+                <div class="infor">
+                    <p>Tai nghe Over <br> 1,990,000 <u>đ</u> <br> <strike>3,000,000 <u>đ</u></strike></p>
+                </div>
+            </div>
+            <div class="item2">
+                <img src="https://phunugioi.com/wp-content/uploads/2020/04/anh-gai-xinh-hot-girl-nhat-ban.jpg" alt="">
+                <div class="infor">
+                    <p>Tai nghe Over <br> 1,990,000 <u>đ</u> <br> <strike>3,000,000 <u>đ</u></strike></p>
+                </div>
+            </div>
+            <div class="item2">
+                <img src="https://phunugioi.com/wp-content/uploads/2020/04/anh-gai-xinh-hot-girl-nhat-ban.jpg" alt="">
+                <div class="infor">
+                    <p>Tai nghe Over <br> 1,990,000 <u>đ</u> <br> <strike>3,000,000 <u>đ</u></strike></p>
+                </div>
+            </div>
+            <div class="item2">
+                <img src="https://phunugioi.com/wp-content/uploads/2020/04/anh-gai-xinh-hot-girl-nhat-ban.jpg" alt="">
+                <div class="infor">
+                    <p>Tai nghe Over <br> 1,990,000 <u>đ</u> <br> <strike>3,000,000 <u>đ</u></strike></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="contact">
+            BẢN QUYỀN THUỘC VỀ TẬP ĐOÀN THIẾT KẾ WEB 11 HỌC KỲ PHỤ | contact me
+            <a href="https://www.facebook.com/haphong.goroki/"><img src="https://www.searchpng.com/wp-content/uploads/2019/03/Facebook-Icon-PNG-715x715.png" alt=""></a>
+            <a href="https://github.com/HaVanPhong"><img src="https://icons-for-free.com/iconfiles/png/512/part+1+github-1320568339880199515.png" alt=""></a>
+
+        </div>
+    </footer>
+    <style>
+        footer {
+            height: 80px;
+            background: cyan;
+            line-height: 80px;
+            display: flex;
+        }
+        
+        .contact {
+            margin: 0 auto;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+            color: rgb(95, 65, 65);
+        }
+        
+        footer img {
+            height: 30px;
+            vertical-align: middle;
+        }
+        
+        section {
+            width: 100%;
+            display: flex;
+        }
+        
+        .containerLeft {
+            width: 20%;
+            background: white;
+        }
+        
+        .containerRight {
+            width: 80%;
+            margin-top: 50px;
+            display: flex;
+        }
+        
+        .item {
+            display: flex;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .item figure {
+            margin: 0;
+        }
+        
+        .item figcaption {
+            width: 100%;
+        }
+        
+        .item img {
+            width: 50%;
+        }
+        
+        .containerRight .item2 {
+            width: 25%;
+        }
+        
+        .item2 img {
+            width: 80%;
+        }
+        
+        .infor {
+            margin-top: 40px;
+        }
+    </style>
+</body>
+
+</html>
+
+</html>
