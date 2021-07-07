@@ -18,6 +18,11 @@ function add() {
     let item = JSON.stringify(newPerson);
     localStorage.setItem(id, item);
     show();
+    window.location.reload();
+    document.getElementById("enterFullName").value = null;
+    document.getElementById("enterNamSinh").value = null;
+    document.getElementById("enterGender").value = null;
+
 }
 
 function show() {
@@ -95,5 +100,5 @@ function update() {
     let newPerson = new Person(id, fullName, namSinh, gender);
     let item = JSON.stringify(newPerson);
     localStorage.setItem(id, item);
-    location.reload();
+    window.location.reload();
 }
