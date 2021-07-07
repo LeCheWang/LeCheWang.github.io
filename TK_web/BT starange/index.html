@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table border="1" id="table">
+        <tr>
+            <th>ID</th>
+            <th>Họ tên</th>
+            <th>Năm sinh</th>
+            <th>Giới tính</th>
+            <th>Sửa</th>
+            <th>Xóa</th>
+        </tr>
+        <!-- <tr>
+            <td>1</td>
+            <td>Bùi Tất Trung</td>
+            <td>2000</td>
+            <td>Nam</td>
+            <td><button>Sửa</button></td>
+            <td><button>Xóa</button></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Nguyễn Đức Điệp</td>
+            <td>2000</td>
+            <td>Nam</td>
+            <td><button>Sửa</button></td>
+            <td><button>Xóa</button></td>
+        </tr> -->
+    </table>
+    <hr>
+    <table border="0">
+        <tr>
+            <td>ID:</td>
+            <td><input type="text" name="" value="1" id="enterId" placeholder="ID"></td>
+            <td><button onclick="add()">Thêm</button></td>
+        </tr>
+        <tr>
+            <td>Họ tên:</td>
+            <td><input type="text" name="" id="enterFullName" placeholder="Nhập họ tên"></td>
+            <td><button onclick="update()">Sửa</button></td>
+        </tr>
+        <tr>
+            <td>Năm sinh:</td>
+            <td><input type="text" id="enterNamSinh" placeholder="Nhập năm sinh"></td>
+        </tr>
+        <tr>
+            <td>Giới tính:</td>
+            <td><input type="text" name="" id="enterGender" placeholder="Nhập giới tính"></td>
+        </tr>
+    </table>
+    <hr>
+
+</body>
+<script src="./scrip.js"></script>
+
+</html>
