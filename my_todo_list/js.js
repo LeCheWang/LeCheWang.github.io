@@ -18,7 +18,7 @@ All();
 
 function getAllTodo() {
     let ar = JSON.parse(localStorage.getItem("arrTodo"));
-    return ar.length ? ar : [];
+    return ar ? ar : [];
 }
 
 function setTodo(arr) {
@@ -50,10 +50,10 @@ function show(arrTodo) {
 
         checkAll.style.display = 'block';
 
-        // count = 0;
-        // for (const item of arrTodo) {
-        //     count = item.wasDoned ? count : count + 1;
-        // }
+        count = 0;
+        for (const item of arrTodo) {
+            count = item.wasDoned ? count : count + 1;
+        }
 
     }
     countItemLeft.innerHTML = `${arrTodo.length} item left`;
@@ -77,10 +77,12 @@ function Done(id, isDone) {
 }
 checkAll.addEventListener('click', () => {
     let ar = getAllTodo();
-    let d = false;
-    if (count === 0) {
-        d = true;
-    }
+    let d = ar.some(value => {
+        return value.wasDoned === true;
+    });
+    // if (count === 0) {
+    //     d = true;
+    // }
     for (const item of ar) {
         Done(item.id, d);
     }
