@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <h1>todos</h1>
+    <div class="container">
+        <input type="text" name="" id="input" placeholder="What needs to be done?">
+        <i id="icon" class="fas fa-check-circle"></i>
+        <i id="icon2" class="fas fa-plus-circle" onclick="add()"></i>
+        <div id="allActive">
+
+        </div>
+        <div class="footer" id="foo">
+            <p id="countItem">0 item left</p>
+            <div>
+                <button id="tatca" onclick="All()">All</button>
+                <button id="ac" onclick="Active()">Active</button>
+                <button id="com" onclick="Completed()">Completed</button>
+                <button id="clear" onclick="ClearCompleted()">Clear Completed</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./js.js"></script>
+
+</html>
