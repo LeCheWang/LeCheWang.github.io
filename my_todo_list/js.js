@@ -78,7 +78,7 @@ function Done(id, isDone) {
 checkAll.addEventListener('click', () => {
     let ar = getAllTodo();
     let d = ar.some(value => {
-        return value.wasDoned === true;
+        value.wasDoned === true;
     });
     // if (count === 0) {
     //     d = true;
