@@ -87,9 +87,9 @@ checkAll.addEventListener('click', () => {
         Done(item.id, d);
     }
     if (d) {
-        filterBtnTab(2);
+        All();
     } else {
-        filterBtnTab(3);
+        Completed();
     }
 })
 
