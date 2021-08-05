@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-image: url("https://img3.thuthuatphanmem.vn/uploads/2019/06/08/hinh-nen-hotgirl-xinh-xan_125439031.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    table {
+        opacity: 0.8;
+        margin: 0 auto;
+        background: rgb(233, 201, 206);
+        margin-top: 50px;
+        color: brown;
+    }
+    
+    #tb1 {
+        padding: 20px;
+    }
+    
+    #tb2 {
+        padding: 50px;
+        border-top-right-radius: 5%;
+        border-top-left-radius: 5%;
+        background-image: url("http://static4.gamespot.com/uploads/original/123/1239113/3185695-f3.png");
+        background-size: cover;
+    }
+</style>
+
+<body>
+
+    <table id="tb1" border="1" cellspacing='0'>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Họ tên</th>
+                <th>Năm sinh</th>
+                <th>Giới tính</th>
+                <th>Sửa</th>
+                <th>Xóa</th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+
+
+        </tbody>
+    </table>
+
+    <table id="tb2">
+        <tr>
+            <td>ID: </td>
+            <td><input id="newID" type="text" placeholder="IDENTITY" readonly=true></td>
+            <td>
+                <Button onclick="CreateANewStudent()">Thêm</Button>
+            </td>
+        </tr>
+        <tr>
+            <td>Họ tên: </td>
+            <td><input id="fullName" type="text" placeholder="Nhập họ tên"></td>
+            <td>
+                <Button onclick="SendUpdate()">Sửa</Button>
+            </td>
+        </tr>
+        <tr>
+            <td>Năm sinh: </td>
+            <td><input id="birthday" type="number" placeholder="Nhập năm sinh"></td>
+            <td><button onclick="Reset()">Reset</button></td>
+        </tr>
+        <tr>
+            <td>Giới tính: </td>
+            <td><input id="gender" type="text" placeholder="Nhập giới tính"></td>
+
+        </tr>
+    </table>
+    <script src="./js.js"></script>
+</body>
+
+</html>
