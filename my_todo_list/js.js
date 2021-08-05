@@ -78,7 +78,7 @@ function Done(id, isDone) {
 checkAll.addEventListener('click', () => {
     let ar = getAllTodo();
     let d = ar.some(value => {
-        return value.wasDoned === true;
+        value.wasDoned === true;
     });
     // if (count === 0) {
     //     d = true;
@@ -87,9 +87,13 @@ checkAll.addEventListener('click', () => {
         Done(item.id, d);
     }
     if (d) {
+<<<<<<< HEAD
         filterBtnTab(1);
+=======
+        All();
+>>>>>>> dfe689d7ad105f0a653938134b3102cdc69c59c9
     } else {
-        filterBtnTab(3);
+        Completed();
     }
 })
 
