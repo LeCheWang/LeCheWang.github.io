@@ -1,0 +1,526 @@
+@import url(https://fonts.google.com/specimen/Open+Sans);
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-family: 'Open Sans';
+}
+
+body {
+  background-color: #070c1f !important;
+  color: #fff;
+}
+
+.text-green {
+  color: #16cf16;
+}
+
+.text-red {
+  color: #e95030;
+}
+
+.container {
+    width: 76%;
+    margin: auto;
+}
+
+/* ==================== Header ====================*/
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  background: #070c1f;
+}
+
+.nav-item {
+  font-weight: 600;
+  padding: 8px;
+}
+
+.nav-link {
+  color: #fff !important;
+
+}
+
+.nav-link:hover {
+  transition: all 0.4s;
+  color: #16cf16 !important;
+}
+
+.btn {
+  border: 2px solid transparent;
+  border-radius: 100px;
+  color: #070C1F;
+  font-size: 14px;
+  padding: 16px 34px;
+  background-color: #16cf16;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.3px;
+  display: inline-block;
+}
+
+.btn:hover {
+  color: #fff;
+  background: #2c3040;
+}
+
+.menu-icon {
+  color: #16cf16 !important; 
+  font-size: 26px;
+}
+
+.line {
+  border-top: 1px solid #ccc !important;
+  border-bottom: 1px solid #ccc !important;
+}
+
+.news:hover .news-subnav {
+  display: block;
+}
+
+.header-nav {
+  border-bottom: 2px solid #491624;
+}
+
+/* ==================== Home ====================*/
+
+#home {
+  padding-top: 132px;
+  transition: all 0.3s ease-in-out;
+}
+
+.home-title {
+  font-size: 4.7rem;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+
+.home-p {
+  font-size: 1.1rem;
+  margin-bottom: 48px;
+  color: #9fafaf;
+}
+
+.home-img,
+.about-img {
+  transition: all 0.3s linear;
+  animation: fly 1.8s infinite alternate ease-in-out;
+}
+
+.box-home {
+  padding-top: 170px;
+  justify-content: space-between;
+}
+
+.box-home-item {
+  background: #202536;
+  width: 22%;
+  padding: 48px 0;
+  text-align: center;
+}
+
+.box-home-item > h2 {
+  color: #16CF16;
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.box-home-item > p {
+  margin: 0;
+}
+
+/* ==================== About ====================*/
+
+#about {
+  padding-top: 170px;
+}
+
+.content-section {
+  background-color: rgba(255, 255, 255, 0.08);
+  color: #16CF16;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  padding: 8px 24px !important;
+  border-radius: 100px !important;
+  letter-spacing: 1px;
+  display: inline-block;
+}
+
+.question-section {
+  font-size: 36px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 16px 0 24px 0;
+}
+
+.ansewer-section {
+  margin-bottom: 32px;
+  line-height: 27px;
+  font-size: 16px;
+  color: #A6A6A6;
+}
+
+/* ==================== Symptoms ====================*/
+
+#symptoms {
+  padding-top: 170px;
+  transition: all 0.3s ease-in-out;
+}
+
+#effect {
+  transition: all 0.3s ease-in-out;
+
+}
+
+.symptoms-item {
+  margin-bottom: 32px;
+}
+
+.symptoms-name {
+  color: #A6A6A6;
+  margin-right: 48px;
+  width: 32%;
+  max-width: 100%;
+}
+
+.check-icon {
+  color: #16cf16 !important;
+  margin-right: 3px;
+  font-size: 14px;
+}
+
+.symptoms-threat,
+#do {
+  text-align: center;
+  padding-top: 170px;
+}
+
+/* ==================== Covid Spread ====================*/
+
+#covid-spread {
+  padding-top: 170px;
+}
+
+.box-covid-spread {
+  background-color: rgba(255, 255, 255, 0.08);
+  padding: 29px 16px;
+  border-radius: 8px;
+  transition: all 500ms ease;
+  text-align: center;
+  width: 45%;
+  margin-bottom: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.box-img-item {
+  width: 128px;
+  height: 128px;
+  object-fit: contain;
+  margin: auto;
+  margin-bottom: 24px;
+}
+
+.card:hover,
+.box-advice > img:hover,
+.box-covid-spread:hover {
+  transform: rotate(3deg);
+  transition: all 0.5s ease;
+}
+
+/* ==================== News ====================*/
+
+.news {
+  position: relative;
+}
+
+.news-subnav {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  list-style: none;
+  color: #333 !important;
+  width: 180px;
+  border-radius: 10px;
+  padding: 16px;
+}
+
+.news-subnav-item {
+  color: #333 !important;
+  border-bottom: 1px solid #;
+  padding: 0;
+  margin-left: 8px;
+}
+
+/* ==================== Test Covid ====================*/
+
+#test-covid {
+  padding-bottom: 170px;
+}
+
+.test-covid-content {
+  background-color: #202536;
+  border-radius: 4px;
+}
+
+.home-btn {
+  border: 2px solid transparent;
+  color: #070C1F;
+  display: inline-block;
+  padding: 16px 34px;
+  background-color: #16CF16;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  border-radius: 100px;
+  transition: all 500ms ease;
+  text-decoration: none;
+}
+
+.outline-btn {
+  border: 1px solid #16cf16;
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.outline-btn:hover {
+  background-color: #16cf16;
+  color: #070C1F;
+}
+
+@keyframes fly {
+  0% {
+    transform: translateY(-2%);
+  }
+  100% {
+    transform: translateY(2%);
+  }
+}
+
+/* ==================== Do ====================*/
+
+.should,
+.shouldnt {
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 36px;
+}
+
+.box-advice {
+  background-color: rgba(255, 255, 255, 0.08);
+  padding: 24px 24px;
+  border-radius: 4px;
+  margin-bottom: 32px;
+}
+
+.box-advice > img {
+  background-color: rgba(255, 255, 255, 0.08);
+  width: 72px;
+  height: 72px;
+  object-fit: none;
+  border-radius: 4px;
+  margin-right: 16px;
+  transition: all 500ms ease;
+}
+
+.advice-title {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+#news {
+  padding: 170px 0;
+}
+
+.width-img-news {
+  width: 33%;
+  margin: auto;
+}
+
+.advice-descript {
+  color: #A6A6A6;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 0px;
+  line-height: 27px;
+}
+
+.card {
+  position: relative;
+  margin-bottom: 48px;
+}
+
+.img-card {
+  max-width: 100%;
+  width: 100%;
+  border-radius: 4px;
+}
+
+.date {
+  background-color: #16cf16;
+  color: #070c1ff5;
+  position: absolute;
+  padding: 4px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 4px 0px 0px 0px;
+}
+
+.news-content {
+  font-size: 25px;
+  font-weight: 600;
+  color: #ffffff;
+  line-height: 33px;
+  margin-top: 12px;
+  margin-bottom: 24px;
+}
+
+.read-more {
+  color: #16CF16;
+  font-weight: 600;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.read-more:hover {
+  color: #fff;
+}
+
+/* ==================== Footer ====================*/
+
+#footer {
+  padding-bottom: 170px;
+  border-bottom: 2px solid #2c3040;
+}
+
+p.footer {
+  color: #A6A6A6 !important;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.contact {
+  display: flex;
+}
+
+.contact > a {
+  color: #A6A6A6;
+  background: rgba(255, 255, 255, 0.08);
+  width: 35px;
+  height: 35px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.icon-contact {
+
+}
+
+.footer-link-item {
+  color: #A6A6A6 !important;
+  font-size: 14px;
+}
+
+.footer-end a {
+  text-decoration: none;
+  color: #A6A6A6 !important;
+  font-size: 14px;
+}
+
+.footer-end a:hover {
+  color: #16cf16;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
+
+  /* Header */
+  .news-subnav  {
+    width: 100%;
+  }
+
+  .news-subnav-item {
+    padding: 8px;
+  }
+
+  /* Home */
+  .home-text {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  .home-title {
+    font-size: 3rem;
+  }
+
+  .box-home-item {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 28px;
+  }
+
+  .width-img-news {
+    width: 90% !important;
+    margin-bottom: 48px;
+  }
+
+  /* About */
+
+  /* Symptoms */
+
+  .question-section {
+    font-size: 30px;
+  }
+
+  .symptoms-name {
+    margin-right: 10px;
+    width: 42%;
+  }
+
+  /* Covid spread */
+  .box-covid-spread {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 1.5rem;
+  }
+
+}
+
+@media (min-width: 700px) and (max-width: 1200px) {
+  .container {
+    width: 100%;
+  }
+
+  .box-home-item {
+    width: 48%;
+    margin: auto;
+    margin-bottom: 28px;
+  }
+
+  .width-img-news {
+    width: 48% !important;
+    margin: 0;
+    margin-bottom: 48px;
+  }
+}

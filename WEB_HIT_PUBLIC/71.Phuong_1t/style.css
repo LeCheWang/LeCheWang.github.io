@@ -1,0 +1,577 @@
+* {
+  margin: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  box-sizing: border-box;
+  
+}
+
+html{
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+                          /*  common CSS */
+.img {
+  width: 100%;
+  height: 100%;
+  animation: move-image 3s ease-in-out infinite;
+  position: relative;
+}
+       /* source code img: covidy Buì Việt Hoàng */
+
+@keyframes move-image {
+  /* from {top: 0px;}
+  to {top: -16px;} */
+  0%  {
+      top: 0px;
+  }
+  50% {
+      top: -15px;
+  }
+  100%{
+      top: 0px;
+  }
+}
+
+.column {
+  width: 70%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 49px;
+}
+
+
+.span {
+  color: #13CF16;
+  padding: 6px 22px;
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 22px;
+}
+
+.p {
+  color: rgb(167, 163, 163);
+  line-height: 26px;
+  margin-bottom: 51px;
+  font-size: 17px;
+}
+
+.h1{
+  color: #fff;
+  font-size: 38px;
+  padding: 20px 0;
+}
+
+.btn{
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  padding: 21px;
+  background-color: #13CF16;
+  border-radius: 38px;  
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.08);
+  transition: all 0.5s ease;
+}
+
+.shake:hover {
+  transform: rotate(2deg);  /* source code : covidy Buì Việt Hoàng */
+  transition: all 0.5s ease;
+}
+
+
+#main {
+  background-color: #070C1F;
+}
+
+                                  /* header  */
+
+
+#header {
+  height: 94px;
+  background-color: #070C1F;
+  border-bottom: 2px solid #ccc;
+  position: fixed;
+  z-index: 1;
+}
+
+
+#header .navbar {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.brand {
+  margin-top: 31px;
+}
+
+.menu ul{
+  list-style-type: none;
+}
+.list >li {
+  display: inline-block;
+  padding: 0 8px;
+  position: relative;
+  line-height: 94px;
+}
+
+.list >li >a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  padding: 8px;
+  background-color: transparent;
+}
+
+.list   a:hover {
+  color: #13CF16;
+  transition: all 0.5s ease;
+}
+
+
+.subnav {
+  display: none;
+ position: absolute;
+ top: 100%;
+ height: 168px;
+  min-width: 184px;
+ background-color: #fff;
+ box-shadow: 0 0 10px rgba(255, 255, 255, 0.08);
+ border-radius: 3%;
+
+}
+
+.menu li:hover .subnav{
+  display: block;
+}
+
+.subnav li {
+  height: 50px;
+  border-bottom: 2px solid #ccc;
+  width: 80%;
+  
+}
+.subnav a{
+  display: block;
+  text-decoration: none;
+  color: #000;
+  line-height: 50px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.phone-number {
+  line-height: 100px;
+}
+
+                          /* home */
+
+#home {
+  height: 780px;
+  top: 94px;
+  margin-top: 94px;
+  padding: 120px 0;
+}
+
+.home-column {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  gap: 30px;
+}
+
+.home-items {
+  flex: 50%;
+}
+
+.home-items h1 {
+  color: #fff;
+  font-size: 80px;
+  line-height: 98px;
+}
+
+
+.home-img {
+  flex: 50%;
+}
+
+
+                          /* count-up number  */
+
+
+.count-up {
+  height: 180px;
+  margin: 115px 0;
+}
+
+.num-container {
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 24% 24% 24% 24%;
+  grid-gap: 3%;
+}
+
+
+.count-items {
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 4px;
+  text-align: center;
+  
+}
+
+.text {
+  padding: 50px 0;
+}
+
+.text h6 {
+  color: #13CF16;
+  font-size: 32px;
+  margin-bottom: 26px;
+}
+
+.text p {
+  color: #fff;
+}
+
+                          /* about  */
+
+#about {
+  height: 660px;
+  padding-top: 150px;
+}
+
+
+                                  /* symptoms  */
+
+#symptoms {
+  height: 1555px;
+  padding-top: 150px;
+}
+
+.box-column  {
+  width: 60%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50px 50px;
+  grid-gap: 30px;
+  margin-top: -27px;
+  margin-bottom: 78px;
+
+}
+
+.box {
+  padding: 20px 0;
+}
+
+.box i {
+  color: #13CF16;
+}
+
+.box span {
+  color: rgb(167, 163, 163);
+}
+
+                          /*   SYMPTOMS   covid-threat  */
+
+.covid-threat {
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 150px;
+}
+
+.threat-content {
+  width: 78%;
+  margin: 0 auto;
+}
+
+
+.center{
+  text-align: center ;
+}
+
+                          /* covid spread  */
+
+
+#covid-spread {
+  padding-top: 150px;
+  padding-bottom: 50px;
+}
+
+.spread-img {
+  display: grid;
+  grid-template-columns: 44% 44%;
+  grid-template-rows: 50% 50%;
+  grid-gap: 31px;
+  text-align: center;
+}
+
+.img-items {
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 4px;
+}
+
+.top {
+  margin-top: 44px;
+  margin-bottom: 57px;
+}
+
+.top-2 {
+  margin: 20px;
+}
+
+.img-items p {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+
+.check {
+  margin: -38px 0 38px 0;
+}
+
+.box {
+  margin-bottom: -15px;
+}
+
+                          /* do-donot  */
+
+#do_donot {
+  padding-top: 150px;
+}
+.title-content {
+  width: 52%;
+  margin: 0 auto;
+}
+
+h2 {
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+h2 span {
+  color: #13CF16;
+}
+
+.col-box {
+  display: flex;
+  gap: 19px;
+}
+
+h3 {
+  color: #fff;
+}
+
+.col-box {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.col-box img {
+  background-color: rgba(255, 255, 255, 0.08);
+  height: 72px;
+  width: 72px;
+  margin: 16px 0 20px 16px;
+  border-radius: 4px;
+}
+
+
+.col-content {
+  margin: 16px 16px -19px 0;
+}
+
+                      /* news feed  */
+
+
+#news-feed {
+  padding-top: 150px;
+}
+
+.news-container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.news-column {
+  display: grid;
+  grid-template-columns: 32% 32% 32%;
+  grid-gap: 3%;
+}
+
+.new-img img {
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 50px;
+  
+}
+
+.text-content h2 {
+  font-weight: 300;
+  margin-top: 20px;
+  line-height: 32px;
+}
+
+.text-content a {
+  color: #13CF16;
+  text-decoration: none;
+}
+
+.new-img {
+  position: relative;
+}
+
+.column-1 .date{
+  color: #fff;
+  padding: 5px;
+  background-color: #13CF16;
+  border-top-left-radius: 4px;
+  width: 34%;
+  position: absolute;
+}
+                          /* want to test Covid  */
+
+.test-contaier {
+  width: 70%;
+  margin: 0 auto;
+   background-color: rgba(255, 255, 255, 0.08);
+   margin-top: 150px;
+}
+
+.test-box {
+  width: 61%;
+  margin: 0 auto;
+
+  padding: 35px 0 45px 0;
+
+}
+
+.btn-box {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.btn-box a {
+  text-decoration: none;
+  color: #fff;
+  padding: 17px 34px;
+  background-color: rgba(150, 23, 23, 0.08);
+  border-radius: 29px;
+  border: 2px solid #13CF16;
+}
+
+.btn-box a:hover {
+  color: #000;
+  background-color: #13CF16;
+  transition: all 0.5s ease;
+}
+
+                          /* footer  */
+
+#footer {
+  margin-top: 150px;
+}
+
+.footer-container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.footer-row {
+  display: grid;
+  grid-template-columns: 33% 15% 15% 15% 15%;
+  grid-gap: 2%;
+}
+
+.col-1 img {
+  margin-bottom: 20px;
+}
+
+.col-2 i {
+  color: #13CF16;
+}
+
+p {
+  color: rgb(167, 163, 163);
+
+}
+
+.col-2 ul {
+  list-style-type: none;
+  margin-left: -20px;
+}
+
+.col-2 li a,
+.end-container span , .end-container a{
+  color: rgb(167, 163, 163);
+  text-decoration: none;
+}
+
+.col-2 p {
+  color: #fff;
+  font-size: 16px;
+}
+
+.icon {
+  display: flex;
+  gap: 20px;
+}
+.col-1 .icon a {
+  text-decoration: none;
+  color: #999898;
+  background: rgba(255, 255, 255, 0.08);
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+
+.col-1 .icon i:hover {
+  color: rgb(90, 89, 89);
+  transition: all 0.5s ease;
+}
+
+.col-2 a:hover,
+.end-container a:hover {
+  color: rgb(116, 115, 115);
+  transition: all 0.5s ease;
+}
+
+.col-1 p{
+  margin-bottom: 20px;
+  line-height: 23px;
+}
+
+.col-2 p ,
+.col-2 li {
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+                              /* end  */
+
+#end {
+  height: 76px;
+  border-top: 1px solid #b8b5b5;
+  margin-top: 150px;
+}
+
+.end-container {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: 0 auto;
+  line-height: 76px;
+}
