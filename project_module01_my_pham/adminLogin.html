@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./assets/register.css">
+</head>
+
+<body>
+  <div class="main">
+
+    <form onsubmit="return false;" class="form" id="form-1">
+      <h3 class="heading">Admin Page</h3>
+      <!-- <p class="desc"></p> -->
+
+      <div class="spacer"></div>
+
+      <div class="form-group">
+        <label for="email" class="form-label">Email</label>
+        <input id="email" name="email" type="text" placeholder="EX: email@domain.com" class="form-control">
+        <span class="form-message"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="password" class="form-label">Password</label>
+        <input id="password" name="password" type="password" placeholder="Enter Admin Password" class="form-control">
+        <p id="error-message"></p>
+      </div>
+ 
+      <button class="form-submit" onclick="login()">Login</button>
+      
+    </form>
+  </div>
+
+  <!-- <script src="./register.js"></script>
+  <script src="./login.js"></script> -->
+  <script src="./adminLogin.js"></script>
+  <script>
+    /*Validator({
+      form: '#form-1',
+      formGroupSelector: '.form-group',
+      errorSelector: '.form-message',
+      rules: [
+        Validator.isRequired('#fullname', 'Vui lòng nhập tên đầy đủ của bạn'),
+        // Validator.isRequired('#email'),
+        Validator.isEmail('#email'),
+        Validator.isRequired('avatar'),
+        Validator.minLength('#password', 6),
+        Validator.isRequired('#password_confirmation'),
+        Validator.isRequired('input[name="gender"]'),
+        Validator.isRequired('#province'),
+        Validator.isConfirmed('#password_confirmation', function () {
+          return document.querySelector('#form-1 #password').value;
+        }, 'Mật khẩu nhập lại không chính xác')
+      ],
+      onSubmit: function (data) {
+        //Call API
+        console.log(data);
+      }
+    });*/
+  </script>
+
+</body>
+
+</html>

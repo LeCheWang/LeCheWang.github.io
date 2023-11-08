@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/base.css">
+    <link rel="stylesheet" href="./assets/homePage.css">
+    <link rel="stylesheet" href="./assets/fonts/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header">
+                <div class="grid">
+                    <nav class="header__navbar">
+                        <ul class="header__navbar-list">
+                        </ul>
+
+                        <ul class="header__navbar--list">
+                            <li class="header__navbar--item header__navbar--item--has-notify">
+                                <a href="" class="header__navbar--item--link ">
+                                    <i class="header__navbar--icon fa-solid fa-circle-user"></i>
+                                    <span id="current_fullname"></span>
+                                </a>
+                                <div class="header__notify">
+                                    <header class="header__notify-header">
+                                        <!-- <h3>Chưa có thông báo mới</h3> -->
+                                    </header>
+
+                                </div>
+                            </li>
+                            <li class="header__navbar--item auth">
+                                <a href="./Register.html" target="_blank"
+                                    class="header__navbar--item--link header__navbar--item--link-strong header__navbar--item--link-separate">Register</a>
+                            </li>
+                            <li class="header__navbar--item auth">
+                                <a href="./login.html" target="_blank"
+                                    class="header__navbar--item--link header__navbar--item--link-strong">Login</a>
+                            </li>
+
+                        </ul>
+                    </nav>
+                    <!-- header with search -->
+                    <div class="header-with-search">
+                        <div class="header__logo">
+                            <h1>Book Store</h1>
+                            <!-- <img src="./assets/img/logo.jpg" alt=""> -->
+                        </div>
+                        <div class="header__search">
+                            <input type="text" class="header__search-input"
+                                placeholder="Search with title, category, price...">
+                            <div class="header__search-select">
+                                <ul class="header__search-option">
+                                    <li class="header__search-option-item header__search-option-item--active">
+                                        <span>Dưỡng da</span>
+                                        <i class="fa-solid fa-check"></i>
+                                    </li>
+                                    <li class="header__search-option-item">
+                                        <span>Trang điểm</span>
+                                        <i class="fa-solid fa-check"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="header__search-btn">
+                                <i class="header__search-btn-icon fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </div>
+                        <!-- Cart layout -->
+                        <div class="header__cart">
+                            <div class="header__cart-wrap">
+                                <a href="./cart.html" target="_blank">
+                                    <i class="header__cart-icon fa-solid fa-cart-shopping"></i>
+                                </a>
+                                <!-- Số lượng sp trong giỏ hàng -->
+                                <span class="header__cart-notice">3</span>
+                                <!-- No cart: header__cart-list--no-cart -->
+                                <div class="header__cart-list">
+                                    <img src="./assets/img/empty-cart.jpg" alt="" class="header__cart-no-cart-img">
+                                    <!-- Giỏ hàng -->
+                                    <h4 class="header__cart-heading">Sản phẩm đã thêm</h4>
+                                    <ul class="header__cart-list-item">
+                                        <!-- cart sản phẩm 1  -->
+                                        <li class="header__cart-item">
+                                            <img src="./assets/img/sp01.avif" alt="" class="header__cart-img">
+                                            <div class="header__cart-item-info">
+                                                <div class="header__cart-item-head">
+                                                    <h5 class="header__cart-item-name">Nước hoa Dior</h5>
+                                                    <div class="header__cart-item-price-wrap">
+                                                        <span class="header__cart-item-price">2.000.000 đ</span>
+                                                        <span class="header__cart-item-multiply">x</span>
+                                                        <span class="header__cart-item-qnt">2</span>
+                                                    </div>
+                                                </div>
+                                                <div class="header__cart-item-body">
+                                                    <span class="header__cart-item-description">
+                                                        Phân loại: Nước hoa
+                                                    </span>
+                                                    <span class="header__cart-item-remove">Xóa</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <!-- Cart sản phẩm 2 -->
+                                        <li class="header__cart-item">
+                                            <img src="./assets/img/sp01.avif" alt="" class="header__cart-img">
+                                            <div class="header__cart-item-info">
+                                                <div class="header__cart-item-head">
+                                                    <h5 class="header__cart-item-name">Nước hoa Dior</h5>
+                                                    <div class="header__cart-item-price-wrap">
+                                                        <span class="header__cart-item-price">2.000.000 đ</span>
+                                                        <span class="header__cart-item-multiply">x</span>
+                                                        <span class="header__cart-item-qnt">2</span>
+                                                    </div>
+                                                </div>
+                                                <div class="header__cart-item-body">
+                                                    <span class="header__cart-item-description">
+                                                        Phân loại: Nước hoa
+                                                    </span>
+                                                    <span class="header__cart-item-remove">Xóa</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <!-- Cart sản phẩm 3 -->
+                                        <li class="header__cart-item">
+                                            <img src="./assets/img/sp01.avif" alt="" class="header__cart-img">
+                                            <div class="header__cart-item-info">
+                                                <div class="header__cart-item-head">
+                                                    <h5 class="header__cart-item-name">Nước hoa Dior</h5>
+                                                    <div class="header__cart-item-price-wrap">
+                                                        <span class="header__cart-item-price">2.000.000 đ</span>
+                                                        <span class="header__cart-item-multiply">x</span>
+                                                        <span class="header__cart-item-qnt">2</span>
+                                                    </div>
+                                                </div>
+                                                <div class="header__cart-item-body">
+                                                    <span class="header__cart-item-description">
+                                                        Phân loại: Nước hoa
+                                                    </span>
+                                                    <span class="header__cart-item-remove">Xóa</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <a href="#" class="header__cart-view-cart btn btn--primari">Đi đến thanh toán</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="app__container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="demo-content">.col-md-6</div>
+                <div class="grid">
+                    <div class="grid__row app__content">
+                        <!-- <div class="grid__column-2">
+                            <nav class="category">
+                                <h3 class="category__heading">
+                                    <i class="category__heading-icon fa-solid fa-list"></i>
+                                    Danh mục
+                                </h3>
+                                <ul class="category-list">
+                                    <li class="category-item category-item--active">
+                                        <a href="#" class="category-item__link">Dưỡng da</a>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="#" class="category-item__link">Nước hoa</a>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="#" class="category-item__link">Đồ trang điểm</a>
+                                    </li>
+                                </ul>
+                                <a href="./admin.html" class="category-view-all">Admin</a>
+                            </nav>
+                        </div> -->
+                        <!-- Product -->
+                        <div class="grid__column-10">
+                            <div class="home-filter">
+                                <span class="home-filter__label">Sắp xếp theo</span>
+                                <div class="select-input">
+                                    <span class="select-input__lable">Giá</span>
+                                    <i class=".select-input__icon fa-solid fa-angles-down"></i>
+                                    <!-- List option -->
+                                    <ul class="select-input__list">
+                                        <li class="select-input__item">
+                                            <a href="#" class="select-input__link">Thấp đến cao</a>
+                                        </li>
+                                        <li class="select-input__item">
+                                            <a href="#" class="select-input__link">Cao đến thấp</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="home-product">
+                                <!-- Product item -->
+                                <div class="grid__row product-list-custom">
+                                    <div class="grid__column-2">
+                                        <div class="home-product-item">
+                                            <div class="home-product-item__img">
+                                                <img src="./assets/img/Phan-mat.jpg" alt="">
+                                            </div>
+                                            <h4 class="home-product-item__name"><span class="category">[Trang điểm]</span> 2023
+                                                Bảng Phấn Mắt Màu Lì Và Màu Nhũ Kim Tuyến Trang Điểm Lâu Trôi</h4>
+                                            <div class="home-product-item-action">
+                                                <span class="home-product-item__price">500,000đ</span>
+                                                <span class="home-product-item__cart">
+                                                    <i class="home-product-item__cart-icon fa-solid fa-cart-plus"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid__column-2">
+                                        <div class="home-product-item">
+                                            <div class="home-product-item__img">
+                                                <img src="./assets/img/sauvage.jpg" alt="">
+                                            </div>
+                                            <h4 class="home-product-item__name"><span class="category">[Trang điểm]</span> 2023
+                                                Bảng Phấn Mắt Màu Lì Và Màu Nhũ Kim Tuyến Trang Điểm Lâu Trôi</h4>
+                                            <div class="home-product-item-action">
+                                                <span class="home-product-item__price">500,000đ</span>
+                                                <span class="home-product-item__cart">
+                                                    <i class="home-product-item__cart-icon fa-solid fa-cart-plus"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid__column-2">
+                                        <div class="home-product-item">
+                                            <div class="home-product-item__img">
+                                                <img src="./assets/img/skII.jpg" alt="">
+                                            </div>
+                                            <h4 class="home-product-item__name"><span class="category">[Trang điểm]</span> 2023
+                                                Bảng Phấn Mắt Màu Lì Và Màu Nhũ Kim Tuyến Trang Điểm Lâu Trôi</h4>
+                                            <div class="home-product-item-action">
+                                                <span class="home-product-item__price">500,000đ</span>
+                                                <span class="home-product-item__cart">
+                                                    <i class="home-product-item__cart-icon fa-solid fa-cart-plus"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid__column-2">
+                                        <div class="home-product-item">
+                                            <div class="home-product-item__img">
+                                                <img src="./assets/img/Phan-mat.jpg" alt="">
+                                            </div>
+                                            <h4 class="home-product-item__name"><span class="category">[Trang điểm]</span> 2023
+                                                Bảng Phấn Mắt Màu Lì Và Màu Nhũ Kim Tuyến Trang Điểm Lâu Trôi</h4>
+                                            <div class="home-product-item-action">
+                                                <span class="home-product-item__price">500,000đ</span>
+                                                <span class="home-product-item__cart">
+                                                    <i class="home-product-item__cart-icon fa-solid fa-cart-plus"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid__column-2">
+                                        <div class="home-product-item">
+                                            <div class="home-product-item__img">
+                                                <img src="./assets/img/Phan-mat.jpg" alt="">
+                                            </div>
+                                            <h4 class="home-product-item__name"><span class="category">[Trang điểm]</span> 2023
+                                                Bảng Phấn Mắt Màu Lì Và Màu Nhũ Kim Tuyến Trang Điểm Lâu Trôi</h4>
+                                            <div class="home-product-item-action">
+                                                <span class="home-product-item__price">500,000đ</span>
+                                                <span class="home-product-item__cart">
+                                                    <i class="home-product-item__cart-icon fa-solid fa-cart-plus"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid__column-2">
+                                        <div class="home-product-item">
+                                            <div class="home-product-item__img">
+                                                <img src="./assets/img/Phan-mat.jpg" alt="">
+                                            </div>
+                                            <h4 class="home-product-item__name"><span class="category">[Trang điểm]</span> 2023
+                                                Bảng Phấn Mắt Màu Lì Và Màu Nhũ Kim Tuyến Trang Điểm Lâu Trôi</h4>
+                                            <div class="home-product-item-action">
+                                                <span class="home-product-item__price">500,000đ</span>
+                                                <span class="home-product-item__cart">
+                                                    <i class="home-product-item__cart-icon fa-solid fa-cart-plus"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid__column-2">
+                                        <div class="home-product-item">
+                                            <div class="home-product-item__img">
+                                                <img src="./assets/img/Phan-mat.jpg" alt="">
+                                            </div>
+                                            <h4 class="home-product-item__name"><span class="category">[Trang điểm]</span> 2023
+                                                Bảng Phấn Mắt Màu Lì Và Màu Nhũ Kim Tuyến Trang Điểm Lâu Trôi</h4>
+                                            <div class="home-product-item-action">
+                                                <span class="home-product-item__price">500,000đ</span>
+                                                <span class="home-product-item__cart">
+                                                    <i class="home-product-item__cart-icon fa-solid fa-cart-plus"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid__column-2">
+                                        <div class="home-product-item">
+                                            <div class="home-product-item__img">
+                                                <img src="./assets/img/Phan-mat.jpg" alt="">
+                                            </div>
+                                            <h4 class="home-product-item__name"><span class="category">[Trang điểm]</span> 2023
+                                                Bảng Phấn Mắt Màu Lì Và Màu Nhũ Kim Tuyến Trang Điểm Lâu Trôi</h4>
+                                            <div class="home-product-item-action">
+                                                <span class="home-product-item__price">500,000đ</span>
+                                                <span class="home-product-item__cart">
+                                                    <i class="home-product-item__cart-icon fa-solid fa-cart-plus"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid__column-2">
+                                        <div class="home-product-item">
+                                            <div class="home-product-item__img">
+                                                <img src="./assets/img/Phan-mat.jpg" alt="">
+                                            </div>
+                                            <h4 class="home-product-item__name"><span class="category">[Trang điểm]</span> 2023
+                                                Bảng Phấn Mắt Màu Lì Và Màu Nhũ Kim Tuyến Trang Điểm Lâu Trôi</h4>
+                                            <div class="home-product-item-action">
+                                                <span class="home-product-item__price">500,000đ</span>
+                                                <span class="home-product-item__cart">
+                                                    <i class="home-product-item__cart-icon fa-solid fa-cart-plus"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid__column-2">
+                                        <div class="home-product-item">
+                                            <div class="home-product-item__img">
+                                                <img src="./assets/img/Phan-mat.jpg" alt="">
+                                            </div>
+                                            <h4 class="home-product-item__name"><span class="category">[Trang điểm]</span> 2023
+                                                Bảng Phấn Mắt Màu Lì Và Màu Nhũ Kim Tuyến Trang Điểm Lâu Trôi</h4>
+                                            <div class="home-product-item-action">
+                                                <span class="home-product-item__price">500,000đ</span>
+                                                <span class="home-product-item__cart">
+                                                    <i class="home-product-item__cart-icon fa-solid fa-cart-plus"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Test -->
+
+    </div>
+    <footer class="footer">
+        <div class="img">
+            <img src="./assets/img/footer.webp" alt="">
+        </div>
+    </footer>
+    </div>
+    <script src="./homePage.js"></script>
+</body>
+<a class="carousel-control-next" href="#myCarousel" data-slide="next">
+    <i class="fa fa-angle-right"></i>
+</a>
+</html>
