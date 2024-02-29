@@ -12,6 +12,7 @@ body{
     color: rgb(22, 10, 10);
     width: 100%;
     display: flex;
+    border-bottom-left-radius: 50%;
     /* justify-content: baseline; */
      align-items: center; 
   
@@ -46,80 +47,83 @@ i{
     font-size: 20px;
 }
  #infor{
-    background-color: aliceblue;
+    background-color: rgb(68, 112, 151);
     height: 80px;
     clear: left;
     text-align: center;
     line-height:80px ;
     color: rgb(236, 134, 1);
     font-size: large;
+    margin-block: 20px;
+    border-radius: 50%;
 }
  
-#edu{
-    height: 500px;
+#edu{ 
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
 }
 #edu #left{
-    background-color: rgb(255, 255, 255);
-    float: left; 
-    width: 900px;
-    margin-left: 150px ;
-    margin-right: 30px;
-    /* display: flex; */
+    background-color: rgb(255, 255, 255);  
+    width: 60%;  
 }
 #edu #left h1{
     background-color: rgb(253, 167, 8);
     height: 50px;
     line-height: 50px;
-    color: white;
-    padding: 10px;
-    width: 657px;
-    margin-right: 150px;
+    text-indent: 20px;
+    color: white; 
+    width: 100%; 
    
 }
+
 .main-box{
+    width: 100%;
     display: flex;
-    flex-wrap:wrap ;
-     /* de cac box nam trong width cua no */
+    flex-wrap:wrap;
+    justify-content: space-between; 
 }
+
 .box{
     background-color: aqua;
-    width: 200px;
-    height: 200px;
-    display: block !important;
-    margin-right: 1cm;
-    margin-top: 5px;
+    flex-basis: 30%;  
+    margin-top: 10px; 
 }
-.ima{
-    background-color: bisque;
-    width: 196px;
-    height: 150px;
-    line-height: 150px;
-    border: rgb(145, 143, 143) 2px solid;
-    text-align: center;
+
+.ima{ 
+    width: 100%;  
+    border: rgb(145, 143, 143) 1px solid;
+    box-sizing: border-box;
+    display: flex;
 }
-.box p{
-    margin-top: 3%;
-    margin-left: 7%;
+
+.ima img {
+    width: 100%;  
+}
+
+.box p{ 
     font-size: large;
 }
+
+
+/* right  */
 #edu #right {
-    background-color:white;
-    float: left;
-    width: 300px;
+    background-color:white; 
+    width: 35%;
     
 }
 #edu #right h1{
-     background-color: rgb(253, 167, 8);
+    background-color: rgb(253, 167, 8);
     height: 50px;
     line-height: 50px;
-    color: white;
-    padding: 10px;
+    color: white; 
+    text-indent: 20px;
 } 
 .item{
     display: flex;
-    /* width: 100%; */
-    margin-top: 1%;
-    padding: 4%;
+    margin-top: 10px;
+    padding: 16px;
     box-sizing: border-box;
     border: rgb(255, 208, 80) 2px solid;
 }  
@@ -140,4 +144,5 @@ i{
     font-size: large;
     font-weight: 900;
     padding: 1%;
+    margin-top: 20px;
 }
