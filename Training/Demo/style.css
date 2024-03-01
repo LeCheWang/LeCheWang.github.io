@@ -3,23 +3,29 @@ body, *{
     padding: 0;
 }
 
-.header {
-    height: 400px;
+.body {
+    display: flex;
+    flex-direction: column;
+}
+
+.header { 
+    margin-top: 50px;
 }
 .header img {
-    width: 100%;
-    height: 400px;
+    width: 100%; 
 }
 
 .menu {
     display: flex;
     list-style: none;
-    width: 50%;
+    width: 100%;
     height: 50px;
     line-height: 50px;
     background-color: cyan;
     justify-content: space-around;
     margin: 0;
+    position: fixed;
+    z-index: 100;
 }
 
 .menu li {
@@ -42,26 +48,52 @@ body, *{
 }
 
 /* css danh sách món */
-.container{
-    background-color: violet;
-    padding-bottom: 20px;
+.container{ 
+    padding-bottom: 20px; 
+    display: flex;
+    justify-content: center;
 }
 .products {
-    width: 80%;
-    margin: 0 auto;
+    --collumn: 4;
+    --space-collumn: 10px;
+    width: 80%; 
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    list-style: none;
+    flex-wrap: wrap; 
+    list-style: none;   
+    margin-left: calc(-1 * var(--space-collumn));
 }
 
 .products li {
-    width: 24%;
+    margin-left: var(--space-collumn);
+    width: calc(calc(100% / var(--collumn)) - var(--space-collumn));
     margin-top: 20px;
     text-align: center; 
     border-radius: 12px;
     background-color: white; 
     position: relative;
+    box-shadow: 0 7px 10px #333;
+}
+
+@media screen and (max-width: 1024px) {
+    .products {
+        --collumn: 3;
+    }
+}
+
+@media screen and (max-width: 739px) {
+    .products {
+        --collumn: 2;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .products {
+        --collumn: 1;
+    }
+}
+
+.products li img {
+    border-bottom-left-radius: 40%;
 }
 
 .products li .sale{
