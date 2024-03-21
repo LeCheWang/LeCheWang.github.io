@@ -55,7 +55,7 @@ body, *{
 }
 .products {
     --collumn: 4;
-    --space-collumn: 10px;
+    --space-collumn: 10px; 
     width: 80%; 
     display: flex;
     flex-wrap: wrap; 
