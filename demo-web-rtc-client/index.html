@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://unpkg.com/peerjs@1.5.4/dist/peerjs.min.js"></script>
+    <script src="https://unpkg.com/socket.io-client@4.7.5/dist/socket.io.min.js"></script>
+</head>
+<body>
+    <div id="div_chat">
+        <h1>Online users</h1>
+        <ul id="member-list">
+            
+        </ul>
+        <h3 id="my-peer-id">Your id: </h3>
+        <video id="localStream" width="300" controls></video>
+        <br>
+        <video id="remoteStream" width="300" controls></video>
+        <br>
+        <br>
+        <input type="text" id="roomId" placeholder="roomId">
+        <button id="btnCall">Call</button>
+    </div>
+    
+    <div id="div_signup">
+        <input type="text" id="txtUsername" placeholder="username">
+        <button id="btnSignup">Sign up</button>
+    </div>
+
+
+</body>
+<script src="main.js"></script>
+</html>
